@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Montserrat:wght@400;500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Tektur:wght@500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Главная</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-lg-5 d-flex d-lg-block gap-4 gap-lg-0">
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
+        <a href="/" class="d-flex gap-2 align-items-center logoW">
+          <div class="headerLogo logo"><img src="img/admin/header/logo.svg" alt="logo"></div>
+          <div class="headerDescr d-none d-lg-block">
+            ЧЕРЕМХОВСКИЙ <span>ЗАВОД</span>
+            МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+          </div>
+          <img src="img/icons/logo-icon.svg" alt="icon" class="headerLogoIcon">
+        </a>
+      </div>
+      <div class="col-6 col-lg-7">
+        <div class="d-flex justify-content-end align-items-center gap-0 gap-lg-4">
+          <a href="tel:+793952252352" class="headerPhone">
+            <span class="d-none d-lg-block">+79 (3952) 25-23-52</span>
+          </a>
+
+          <button class="headerButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+            <span class="d-none d-lg-block">Рассчитать стоимость</span>
+            <img class="d-none d-lg-block" src="img/icons/calc.svg" alt="calc">
+            <img class="d-block d-lg-none" src="img/icons/calc-white.svg" alt="calc">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+		<main class="main">		
+			<section class="intro" id="intro">
+  <div class="container container--lg">
+    <div class="introW">
+
+      <!-- <div class="acordion">
+        <ul class="menu">
+          <li class="item">
+
+            <div class="trigger" style="background-image: url('img/admin/intro/intro.png');">
+
+            </div>
+            <div class="content">
+              <h1 class="introTitle h1">
+                ЧЕРЕМХОВСКИЙ ЗАВОД
+                МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+              </h1>
+              <p class="introDescr">
+                Производство строительных металлоконструкций любой сложности с цинковым покрытием
+              </p>
+              <div class="d-flex gap-3">
+                <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+                  Рассчитать стоимость
+                  <img src="img/icons/calc.svg" alt="calc">
+                </button>
+                <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+                  Оставить заявку
+                  <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#order"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </li>
+          <li class="item">
+
+            <div class="trigger" style="background-image: url('img/admin/services/image-1.png');">
+              <p>SLIDE 2 SLIDE 2</p>
+            </div>
+            <div class="content">
+              <h3>SLIDE 2</h3>
+              <p>text2</p>
+            </div>
+
+
+          </li>
+          <li class="item">
+
+            <div class="trigger" style="background-image: url('img/admin/services/image-2.png');">
+              <p>SLIDE 3 SLIDE 3</p>
+            </div>
+            <div class="content">
+              <h3>SLIDE 3</h3>
+              <p>text3</p>
+            </div>
+
+
+          </li>
+        </ul>
+      </div> -->
+
+
+
+      <div class="acordion">
+        <!-- These variables help keep track of the input name and ID-->
+        <!-- currentTab helps keep track of each individual input-->
+        <!-- tabControlName is used as a unique identifier for the accordion-->
+        <ul>
+          <li>
+            <!-- Using radio inputs means only one can be selected at a time-->
+            <!-- The ID must be unique so the label will point to the input-->
+            <input id="rad1" type="radio" name="rad" checked="checked" />
+            <label for="rad1" style="background-image: url('img/admin/intro/intro.png');">
+
+            </label>
+            <div class="accslide" style="background-image: url('img/admin/intro/intro.png');">
+              <div class="content">
+                <h1 class="introTitle h1">
+                  ЧЕРЕМХОВСКИЙ ЗАВОД
+                  МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+                </h1>
+                <p class="introDescr">
+                  Производство строительных металлоконструкций любой сложности с цинковым покрытием
+                </p>
+                <div class="d-flex gap-3">
+                  <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-order">
+                    Рассчитать стоимость
+                    <img src="img/icons/calc.svg" alt="calc">
+                  </button>
+                  <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+                    Оставить заявку
+                    <svg class="btn-arrow">
+                      <use xlink:href="img/icons/icons.svg#mail"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!-- Using radio inputs means only one can be selected at a time-->
+            <!-- The ID must be unique so the label will point to the input-->
+            <input id="rad2" type="radio" name="rad" />
+            <label for="rad2" style="background-image: url('img/admin/services/image-1.png');">
+
+            </label>
+            <div class="accslide" style="background-image: url('img/admin/services/image-1.png');">
+              <div class="content">
+                <h1 class="introTitle h1">
+                  ЧЕРЕМХОВСКИЙ ЗАВОД
+                  МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+                </h1>
+                <p class="introDescr">
+                  Производство строительных металлоконструкций любой сложности с цинковым покрытием
+                </p>
+                <div class="d-flex gap-3">
+                  <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+                    Рассчитать стоимость
+                    <img src="img/icons/calc.svg" alt="calc">
+                  </button>
+                  <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+                    Оставить заявку
+                    <svg class="btn-arrow">
+                      <use xlink:href="img/icons/icons.svg#mail"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!-- Using radio inputs means only one can be selected at a time-->
+            <!-- The ID must be unique so the label will point to the input-->
+            <input id="rad3" type="radio" name="rad" />
+            <label for="rad3" style="background-image: url('img/admin/services/image-2.png');">
+
+            </label>
+            <div class="accslide" style="background-image: url('img/admin/services/image-2.png');">
+              <div class="content">
+                <h1 class="introTitle h1">
+                  ЧЕРЕМХОВСКИЙ ЗАВОД
+                  МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+                </h1>
+                <p class="introDescr">
+                  Производство строительных металлоконструкций любой сложности с цинковым покрытием
+                </p>
+                <div class="d-flex gap-3">
+                  <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-order">
+                    Рассчитать стоимость
+                    <img src="img/icons/calc.svg" alt="calc">
+                  </button>
+                  <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+                    Оставить заявку
+                    <svg class="btn-arrow">
+                      <use xlink:href="img/icons/icons.svg#mail"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <!-- Using radio inputs means only one can be selected at a time-->
+            <!-- The ID must be unique so the label will point to the input-->
+            <input id="rad4" type="radio" name="rad" />
+            <label for="rad4" style="background-image: url('img/admin/services/image-3.png');">
+
+            </label>
+            <div class="accslide" style="background-image: url('img/admin/services/image-3.png');">
+              <div class="content">
+                <h1 class="introTitle h1">
+                  ЧЕРЕМХОВСКИЙ ЗАВОД
+                  МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+                </h1>
+                <p class="introDescr">
+                  Производство строительных металлоконструкций любой сложности с цинковым покрытием
+                </p>
+                <div class="d-flex gap-3">
+                  <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+                    Рассчитать стоимость
+                    <img src="img/icons/calc.svg" alt="calc">
+                  </button>
+                  <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+                    Оставить заявку
+                    <svg class="btn-arrow">
+                      <use xlink:href="img/icons/icons.svg#mail"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="headerNav">
+        <div class="container">
+          <div class="d-flex d-lg-none justify-content-between align-items-center mb-4">
+            <button class="btnClose">
+              <img src="img/icons/btn-close-black.svg" alt="icon">
+            </button>
+            <a href="tel:+793952252352" class="headerPhone">
+              <span>+79 (3952) 25-23-52</span>
+            </a>
+          </div>
+          <a href="/" class="headerMobLogo d-block d-lg-none">
+            <img src="img/admin/header/logo-vertical.svg" alt="logo">
+          </a>
+          <ul class="headerNavList d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Наши работы</a></li>
+            <li><a href="#">вакансии</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="d-flex d-lg-none flex-column gap-3 mt-4">
+            <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+              Рассчитать стоимость
+              <img src="img/icons/calc.svg" alt="calc">
+            </button>
+            <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+              Оставить заявку
+              <svg class="btn-arrow">
+                <use xlink:href="img/icons/icons.svg#mail"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </div>
+</section>
+			<section class="advantages" id="advantages">
+  <div class="container">
+    <div class="row advantagesRow">
+      <div class="col-lg-3">
+        <div class="advantagesCard d-flex flex-column align-items-center text-center">
+          <img src="img/admin/advantages/image-1.svg" alt="image" class="advantagesCardImg">
+          <p class="advantagesCardDescr">Современное автоматизированное оборудование</p>
+        </div><!-- /advantagesCard -->
+      </div>
+      <div class="col-lg-3">
+        <div class="advantagesCard d-flex flex-column align-items-center text-center">
+          <img src="img/admin/advantages/image-2.svg" alt="image" class="advantagesCardImg">
+          <p class="advantagesCardDescr">Строгий контроль качества на каждом этапе</p>
+        </div><!-- /advantagesCard -->
+      </div>
+      <div class="col-lg-3">
+        <div class="advantagesCard d-flex flex-column align-items-center text-center">
+          <img src="img/admin/advantages/image-3.svg" alt="image" class="advantagesCardImg">
+          <p class="advantagesCardDescr">Высокая производительность (более 4000 тонн в год)</p>
+        </div><!-- /advantagesCard -->
+      </div>
+      <div class="col-lg-3">
+        <div class="advantagesCard d-flex flex-column align-items-center text-center">
+          <img src="img/admin/advantages/image-4.svg" alt="image" class="advantagesCardImg">
+          <p class="advantagesCardDescr">Доставка<br> в любую точку РФ</p>
+        </div><!-- /advantagesCard -->
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="catalog sect threeSliderW">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="projectsTitle h2">Продукция</h2>
+      <a href="#" class="linkMore">
+        Вся продукция завода
+        <svg>
+          <use xlink:href="img/icons/icons.svg#slider-next"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="gridThree gap-none">
+
+      <div class="cardSlide">
+        <a class="cardSlideImg" href="#">
+          <img src="img/admin/services/image-1.png" alt="image">
+        </a>
+        <a class="cardSlideTitle" href="#">
+          Опоры и столбы освещения
+        </a>
+        <a href="#" class="cardSlideBtnText">
+          подробнее
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </a>
+      </div><!-- /cardSlide -->
+
+      <div class="cardSlide">
+        <a class="cardSlideImg" href="#">
+          <img src="img/admin/services/image-2.png" alt="image">
+        </a>
+        <a class="cardSlideTitle" href="#">
+          Дорожное металлическое ограждение одно-, двухстороннее
+        </a>
+        <a href="#" class="cardSlideBtnText">
+          подробнее
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </a>
+      </div><!-- /cardSlide -->
+      <div class="cardSlide">
+        <a class="cardSlideImg" href="#">
+          <img src="img/admin/services/image-3.png" alt="image">
+        </a>
+        <a class="cardSlideTitle" href="#">
+          Металлические опоры линии электропередач (ЛЭП)
+        </a>
+        <a href="#" class="cardSlideBtnText">
+          подробнее
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </a>
+      </div><!-- /cardSlide -->
+    </div>
+
+    <button class="catalogBtn button mx-auto button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+      Оставить заявку
+      <svg>
+        <use xlink:href="img/icons/icons.svg#mail"></use>
+      </svg>
+    </button>
+
+  </div>
+</section>
+			<section class="protect" id="protect">
+  <div class="container container-1920">
+    <div class="protectW">
+      <div class="protectL">
+        <p class="protectText">
+          Защитите металл от коррозии, благодаря технологии
+          <span>горячего цинкования</span>
+        </p>
+        <a href="#" class="protectBtnText">
+          подробнее
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </a>
+      </div><!-- /protectL -->
+      <div class="protectR">
+        <img src="img/admin/protect/image.png" alt="image">
+      </div>
+    </div><!-- /protectW -->
+  </div>
+</section>
+			<section class="services sect threeSliderW" id="services">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="projectsTitle h2">услуги</h2>
+      <a href="#" class="linkMore">
+        все услуги зАвода
+        <svg>
+          <use xlink:href="img/icons/icons.svg#slider-next"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="gridThree gap-none">
+
+      <div class="cardSlide">
+        <a class="cardSlideImg" href="#">
+          <img src="img/admin/services/image-1.png" alt="image">
+        </a>
+        <a class="cardSlideTitle" href="#">
+          Разработка чертежей стадии КМД 
+        </a>
+        <a href="#" class="cardSlideBtnText">
+          подробнее
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </a>
+      </div><!-- /cardSlide -->
+
+      <div class="cardSlide">
+        <a class="cardSlideImg" href="#">
+          <img src="img/admin/services/image-2.png" alt="image">
+        </a>
+        <a class="cardSlideTitle" href="#">
+          Дорожное металлическое ограждение одно-, двухстороннее
+        </a>
+        <a href="#" class="cardSlideBtnText">
+          подробнее
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </a>
+      </div><!-- /cardSlide -->
+      <div class="cardSlide">
+        <a class="cardSlideImg" href="#">
+          <img src="img/admin/services/image-3.png" alt="image">
+        </a>
+        <a class="cardSlideTitle" href="#">
+          Металлические опоры линии электропередач (ЛЭП)
+        </a>
+        <a href="#" class="cardSlideBtnText">
+          подробнее
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </a>
+      </div><!-- /cardSlide -->
+    </div>
+
+    <button class="catalogBtn mx-auto button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+      Рассчитать стоимость
+      <img src="img/icons/calc.svg" alt="calc">
+    </button>
+
+  </div>
+</section>
+			<section class="about" id="about">
+  <div class="container container--lg">
+    <div class="aboutW">
+      <div class="aboutL">
+        <div class="d-block">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="h2 aboutTitle">о заводе</h2>
+            <a href="#" class="aboutVacancyLink">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#vacancy"></use>
+              </svg>
+              Вакансии
+            </a>
+          </div>
+          <div class="content">
+            <p>
+              С августа 2019 года завод является резидентом территории опережающего социально-экономического развития
+              «Черемхово» (ТОСЭР). ТОСЭР в Черемхово создан постановлением правительства Российской Федерации в 2018
+              году.
+            </p>
+            <p>
+              Завод на территории муниципалитета создан для реализации проекта по производству строительных
+              металлических конструкций. Заключен договор аренды на 49 лет на земельный участок, приобретено здание
+              цеха, линия по нанесению цинкового покрытия с производственной мощностью 46 тыс. тонн металла в год.
+            </p>
+          </div><!-- /content -->
+        </div>
+
+        <a href="#" class="protectBtnText">
+          подробнее
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </a>
+
+      </div><!-- /aboutL -->
+      <div class="aboutR">
+        <img src="img/admin/about/image.png" alt="image">
+      </div>
+    </div><!-- /aboutW -->
+  </div>
+</section>
+			<section class="projects threeSliderW" id="projects">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="projectsTitle h2">наши работы</h2>
+      <div class="sliderNav">
+        <button class="sliderNavArrow sliderNavPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+          </svg>
+        </button><!-- /sliderNavPrev -->
+        <button class="sliderNavArrow sliderNavNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </button><!-- /sliderNavNext -->
+      </div>
+    </div>
+    <div class="swiper threeSlider projectsSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide projectsSlide cardSlide">
+          <a class="cardSlideImg" href="#">
+            <img src="img/admin/projects/image-1.jpeg" alt="image">
+          </a>
+          <div class="cardSlideDescrSm">
+            АО "УргалУголь"
+          </div>
+          <a class="cardSlideTitle" href="#">
+            Строительно-монтажные работы ВЛ-6 кВ на фланговый ствол пласта В-12
+          </a>
+          <a href="#" class="cardSlideBtnText">
+            подробнее
+            <svg>
+              <use xlink:href="img/icons/icons.svg#slider-next"></use>
+            </svg>
+          </a>
+        </div><!-- /cardSlide -->
+
+        <div class="swiper-slide projectsSlide cardSlide">
+          <a class="cardSlideImg" href="#">
+            <img src="img/admin/projects/image-2.jpeg" alt="image">
+          </a>
+          <div class="cardSlideDescrSm">
+            ОАО "СУЭК-Красноярск" "Разрез "Бородинский им. М.И. Щадова""
+          </div>
+          <a class="cardSlideTitle" href="#">
+            Перенос ВЛ 110 кВ подстанции 110/6 кВ №22 "Разрез Бородинский им. М.И. Щадова"
+          </a>
+          <a href="#" class="cardSlideBtnText">
+            подробнее
+            <svg>
+              <use xlink:href="img/icons/icons.svg#slider-next"></use>
+            </svg>
+          </a>
+        </div><!-- /cardSlide -->
+        <div class="swiper-slide projectsSlide cardSlide">
+          <a class="cardSlideImg" href="#">
+            <img src="img/admin/projects/image-3.jpeg" alt="image">
+          </a>
+          <div class="cardSlideDescrSm">
+            АО "УргалУголь"
+          </div>
+          <a class="cardSlideTitle" href="#">
+            Металлические опоры линии электропередач (ЛЭП)
+          </a>
+          <a href="#" class="cardSlideBtnText">
+            подробнее
+            <svg>
+              <use xlink:href="img/icons/icons.svg#slider-next"></use>
+            </svg>
+          </a>
+        </div><!-- /cardSlide -->
+        <div class="swiper-slide projectsSlide cardSlide">
+          <a class="cardSlideImg" href="#">
+            <img src="img/admin/projects/image-3.jpeg" alt="image">
+          </a>
+          <div class="cardSlideDescrSm">
+            АО "УргалУголь"
+          </div>
+          <a class="cardSlideTitle" href="#">
+            Металлические опоры линии электропередач (ЛЭП)
+          </a>
+          <a href="#" class="cardSlideBtnText">
+            подробнее
+            <svg>
+              <use xlink:href="img/icons/icons.svg#slider-next"></use>
+            </svg>
+          </a>
+        </div><!-- /cardSlide -->
+
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="partners sect" id="partners">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="partnersTitle h2">наши партнёры</h2>
+      <div class="sliderNav">
+        <button class="sliderNavArrow sliderNavPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+          </svg>
+        </button><!-- /sliderNavPrev -->
+        <button class="sliderNavArrow sliderNavNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+          </svg>
+        </button><!-- /sliderNavNext -->
+      </div>
+    </div>
+    <div class="swiper partnersSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide partnersSlide">
+          <img src="img/admin/partners/image-1.png" alt="image">
+        </div><!-- /partnersSlide -->
+
+        <div class="swiper-slide partnersSlide">
+          <img src="img/admin/partners/image-2.png" alt="image">
+        </div><!-- /partnersSlide -->
+        <div class="swiper-slide partnersSlide">
+          <img src="img/admin/partners/image-3.png" alt="image">
+        </div><!-- /partnersSlide -->
+        <div class="swiper-slide partnersSlide">
+          <img src="img/admin/partners/image-4.png" alt="image">
+        </div><!-- /partnersSlide -->
+        <div class="swiper-slide partnersSlide">
+          <img src="img/admin/partners/image-2.png" alt="image">
+        </div><!-- /partnersSlide -->
+        <div class="swiper-slide partnersSlide">
+          <img src="img/admin/partners/image-3.png" alt="image">
+        </div><!-- /partnersSlide -->
+        <div class="swiper-slide partnersSlide">
+          <img src="img/admin/partners/image-4.png" alt="image">
+        </div><!-- /partnersSlide -->
+
+      </div>
+    </div>
+  </div>
+</section>
+			<section class="contacts" id="contacts">
+  <div class="container container--lg">
+    <div class="contactsW">
+      <div class="contactsL">
+        <h2 class="contactsTitle h2">Контакты</h2>
+        <div class="contactsItem">
+          <div class="contactsItemName">почта:</div>
+          <a href="mailto:email@chzmk.ru" class="contactsItemLink">email@chzmk.ru</a>
+        </div><!-- /contactsItem -->
+        <div class="contactsItem">
+          <div class="contactsItemName">Телефон:</div>
+          <a href="tel:+73954650906" class="contactsItemLink">+7 395 465-09-06</a>
+        </div><!-- /contactsItem -->
+        <div class="contactsItem">
+          <div class="contactsItemName">адрес:</div>
+          <a href="#" class="contactsItemLink">665413, Иркутская область, г. Черемхово, ул. Лесная, д. 6</a>
+        </div><!-- /contactsItem -->
+      </div><!-- /contactsL -->
+      <div class="contactsR">
+        <h2 class="contactsTitle h2">оставить заявку</h2>
+        <form action="#" class="contactsForm">
+          <div class="inputW form-floating">
+            <input class="formInput form-control" id="contacts-name" type="text" placeholder="">
+            <label for="contacts-name">Ваше имя</label>
+          </div>
+          <div class="inputW form-floating">
+            <input class="formInput form-control" id="contacts-mail" type="email" placeholder="">
+            <label for="contacts-mail">Ваш e-mail</label>
+          </div>
+          <div class="inputW form-floating">
+            <textarea class="formText form-control" name="contactsText" id="contacts-text" cols="30" rows="10"
+              placeholder=""></textarea>
+            <label for="contacts-text">Текст сообщения</label>
+          </div>
+          <button class="contactsButton button button--sm button--green">
+            Отправить
+            <svg>
+              <use xlink:href="img/icons/icons.svg#order"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="m"><img src="img/contacts/m.svg" alt="m"></div>
+      </div><!-- /contactsR -->
+    </div><!-- /contactsW -->
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="footerT">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <nav class="footerNav">
+            <h3 class="footerNavTitle">Компания</h3>
+            <ul class="footerNavList">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Наши работы</a></li>
+            </ul>
+          </nav>
+          <a class="d-flex flex-column gap-2 align-items-start gap-1 logoW" href="/">
+            <div class="footerLogo logo"><img src="img/admin/header/logo.svg" alt="logo"></div>
+            <div class="headerDescr d-none d-lg-block">
+              ЧЕРЕМХОВСКИЙ <span>ЗАВОД</span>
+              МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+            </div>
+            <img src="img/icons/logo-icon.svg" alt="icon" class="footerLogoIcon">
+          </a>
+          <div class="energy">
+            <a href="#" class="energyLogo">
+              <img src="img/footer/energy.svg" alt="logo">
+            </a>
+            <p class="energyDescr">
+              проектирование,
+              строительство, энергетика
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <nav class="footerNav">
+            <h3 class="footerNavTitle">Продукция</h3>
+            <ul class="footerNavList">
+              <li><a href="#">Строительные металлические конструкции и опоры ЛЭП
+                </a></li>
+              <li><a href="#">Стальные конструкции
+                </a></li>
+              <li><a href="#">Трубы, элементы трубопроводов
+                </a></li>
+              <li><a href="#">Радио мачты, антенны и башни
+                </a></li>
+              <li><a href="#">Изделия из листового проката
+                </a></li>
+              <li><a href="#">Опоры и столбы освещения
+                </a></li>
+              <li><a href="#">Ограждения, опоры и балки мостов и тоннелей
+
+                </a></li>
+              <li><a href="#">Металлические формы, емкости и т.д.
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4">
+          <nav class="footerNav">
+            <h3 class="footerNavTitle">Услуги</h3>
+            <ul class="footerNavList">
+              <li><a href="#">Разработка чертежей стадии КМД 
+                </a></li>
+              <li><a href="#">Изготовление железобетонных изделий 
+                </a></li>
+              <li><a href="#">Распил профильного металлопроката 
+                </a></li>
+              <li><a href="#">Плазменная резка листового металла 
+                </a></li>
+              <li><a href="#">Сверление отверстий
+                </a></li>
+              <li><a href="#">Сборка и сварка конструкций 
+                </a></li>
+              <li><a href="#">Огрунтование и покраска 
+                </a></li>
+              <li><a href="#">Доставка и монтаж готовых металлоконструкций
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-between">
+          <p class="text-uppercase text--sm">ООО «ЧЕРЕМХОВСКИЙ ЗАВОД МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ»</p>
+          <p class="text-uppercase text--sm">
+            ООО «ЧЗМК» ИНН/КПП 3851023561/385101001
+          </p>
+        </div>
+      </div>
+    </div>
+  </div><!-- /footerT -->
+  <div class="footerB">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="copyright">© 2024 ООО "ЧЗМК"</div>
+        <a class="copyright" href="#">
+          Политика обработки персональных данных
+        </a>
+        <a class="develop" href="#" target="_blank">
+          Разработка сайта – Вангер.рф
+        </a>
+      </div>
+    </div>
+  </div><!-- /footerB -->
+</footer>
+		<!-- modal -->
+<!-- order -->
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content contacts contactsR">
+      <h2 class="contactsTitle h2">оставить заявку</h2>
+      <form action="#" class="contactsForm">
+        <div class="inputW form-floating">
+          <input class="formInput form-control" id="contacts-name" type="text" placeholder="">
+          <label for="contacts-name">Ваше имя</label>
+        </div>
+        <div class="inputW form-floating">
+          <input class="formInput form-control" id="contacts-mail" type="email" placeholder="">
+          <label for="contacts-mail">Ваш e-mail</label>
+        </div>
+        <div class="inputW form-floating">
+          <textarea class="formText form-control" name="contactsText" id="contacts-text" cols="30" rows="10"
+            placeholder=""></textarea>
+          <label for="contacts-text">Текст сообщения</label>
+        </div>
+        <button class="contactsButton button button--sm button--green">
+          Отправить
+          <svg>
+            <use xlink:href="img/icons/icons.svg#order"></use>
+          </svg>
+        </button>
+      </form>
+
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
+        <img src="img/icons/btn-close.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+

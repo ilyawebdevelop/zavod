@@ -1,0 +1,43 @@
+.tabs {
+  margin-top: 60px;
+  padding-bottom: 35px;
+  &__nav {
+    background-color: #8F989F;
+    display: flex;    
+    flex-wrap: wrap;   
+
+    @media(max-width: 991px) {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      margin-left: -4px;
+      margin-right: -10px;
+    }
+
+    .tabs__nav-btn {      
+      transition: background-color .2s linear;
+      display: flex;
+      align-items: center;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      padding-right: 24px;
+      padding-left: 24px;
+      color: #fff;
+
+      &--active {
+        background-color: #16191C;
+        position: relative;
+
+      }
+    }
+  }
+
+  &__panel {
+    display: none;
+    padding-top: 30px;
+
+    &.tabs__panel--active {
+      display: block;
+    }
+  }
+}

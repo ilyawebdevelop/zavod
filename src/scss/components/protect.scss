@@ -1,0 +1,37 @@
+.protect {
+  &W {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  &L {
+    padding-top: 60px;
+    padding-left: 55px;
+    padding-right: 52px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #16191C url('@img/icons/star-gray.svg') no-repeat right center / contain;
+  }
+  &Text {
+    color: #fff;
+    font-family: $font-family-nunito;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 600;
+    max-width: 530px;
+    margin-left: auto;
+    span {
+      background-color: #36AF42;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  &R {
+    img {
+      height: 520px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

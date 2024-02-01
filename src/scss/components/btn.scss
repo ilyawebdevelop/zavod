@@ -1,0 +1,255 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 48px;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+  font-family: $font-family-nunito;
+  column-gap: 15px;
+  color: #16191C;
+
+  &--sm {
+    height: 40px;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--green {
+    background-color: #36AF42;
+    color: #fff;
+    transition: background .2s linear;
+
+    &:hover {
+      background-color: #16191C;
+    }
+    svg {
+      stroke: #fff;
+      fill: transparent;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+
+    svg {
+      fill: transparent;
+      stroke: #36AF42;
+    }
+  }
+  &--black {
+    background-color: #16191C;
+    color: #fff;
+    transition: background-color .2s linear;
+    &:hover {
+      background-color: #36AF42; 
+    }
+    svg {
+      stroke: #fff;
+      fill: transparent;
+    }
+  }
+}
+
+.headerButton {
+  column-gap: 20px;
+  transition: background .2s linear;
+  @media(max-width: 991px){
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    background-color: #16191C;
+  }
+}
+
+.introButton {
+  transition: background .2s linear;
+  @media(max-width: 440px){
+    width: 100%;
+  }
+
+  &.button--green {
+    &:hover {
+      background-color: #16191C;
+    }
+  }
+
+  &.button--white {
+    &:hover {
+      background-color: #36AF42;
+      color: #fff;
+
+      svg {
+        stroke: #fff;
+      }
+    }
+  }
+  img {
+    margin-top: 0!important;
+    padding-left: 0!important;
+  }
+  svg {
+    margin-top: 0!important;
+    padding-left: 0!important;
+  }
+}
+
+.protectBtnText {
+  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #36AF42;
+  letter-spacing: 0.75px;
+  font-family: $font-family-nunito;
+  transition: color .2s linear;
+  max-width: 530px;
+  width: 530px;
+  margin-left: auto;
+
+  &:hover {
+    color: #fff;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    width: 12px;
+    height: 12px;
+    fill: #36AF42;
+    transition: fill .2s linear;
+  }
+}
+
+.cardSlideBtnText {
+  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #36AF42;
+  letter-spacing: 0.75px;
+  font-family: $font-family-nunito;
+  margin-top: 20px;
+  transition: color .2s linear;
+  font-size: 15px;
+
+  &:hover {
+    color: #16191C;
+
+    svg {
+      fill: #16191C;
+    }
+  }
+
+  svg {
+    width: 12px;
+    height: 12px;
+    fill: #36AF42;
+    transition: fill .2s linear;
+  }
+}
+
+.aboutVacancyLink {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  font-weight: 600;
+  font-family: $font-family-nunito;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #36AF42;
+  transition: color .2s linear;
+
+  &:hover {
+    color: #fff;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: #36AF42;
+    transition: fill .2s linear;
+  }
+}
+
+.contactsButton {
+  margin-top: 30px;
+  transition: background .2s linear, color .2s linear;
+  width: 200px;
+
+  svg {
+    transition: stroke .2s linear;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #16191C;
+
+    svg {
+      stroke: #36AF42;
+    }
+  }
+}
+
+.linkMore {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 20px;
+  /* 133.333% */
+  letter-spacing: 0.75px;
+  font-family: $font-family-nunito;
+  text-transform: uppercase;
+  transition: color .2s linear;
+
+  &:hover {
+    color: #36AF42;
+
+    svg {
+      fill: #36AF42;
+    }
+  }
+
+  svg {
+    fill: #16191C;
+    width: 12px;
+    height: 12px;
+    transition: fill .2s linear;
+  }
+}
+
+.catalogBtn {
+  width: 300px;
+  margin-top: 35px;
+}

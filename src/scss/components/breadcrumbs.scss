@@ -1,0 +1,39 @@
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $font-family-nunito;
+  color: #8F989F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 12px;
+  -moz-column-gap: 12px;
+  column-gap: 12px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  li {
+    &:not(:last-child) {
+      padding-right: 4px;
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+
+      &::after {
+        content: '—';
+      }
+    }
+    a {
+      transition: color .2s linear;
+      &:hover {
+        color: #36AF42;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+  }
+}

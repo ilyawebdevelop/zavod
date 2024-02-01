@@ -1,0 +1,36 @@
+<!-- modal -->
+<!-- order -->
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content contacts contactsR">
+      <h2 class="contactsTitle h2">оставить заявку</h2>
+      <form action="#" class="contactsForm">
+        <div class="inputW form-floating">
+          <input class="formInput form-control" id="contacts-name" type="text" placeholder="">
+          <label for="contacts-name">Ваше имя</label>
+        </div>
+        <div class="inputW form-floating">
+          <input class="formInput form-control" id="contacts-mail" type="email" placeholder="">
+          <label for="contacts-mail">Ваш e-mail</label>
+        </div>
+        <div class="inputW form-floating">
+          <textarea class="formText form-control" name="contactsText" id="contacts-text" cols="30" rows="10"
+            placeholder=""></textarea>
+          <label for="contacts-text">Текст сообщения</label>
+        </div>
+        <button class="contactsButton button button--sm button--green">
+          Отправить
+          <svg>
+            <use xlink:href="img/icons/icons.svg#order"></use>
+          </svg>
+        </button>
+      </form>
+
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
+        <img src="@img/icons/btn-close.svg" alt="icon">
+      </button>
+    </div>
+  </div>
+</div>

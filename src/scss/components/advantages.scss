@@ -1,0 +1,45 @@
+.advantages {
+  padding-top: 60px;
+  margin-top: 515px;
+
+  &Row {
+    padding-bottom: 60px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: calc(100% - 30px);
+      height: 1px;
+      background-color: #8F989F;
+    }
+  }
+
+  &Card {
+    &Descr {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 238px;
+      margin-top: 20px;
+      font-family: $font-family-nunito;
+
+      &Sm {
+        font-size: 14px;
+        letter-spacing: 0.14px;
+        line-height: 21px;
+        margin-top: 10px;
+        max-width: unset;
+      }
+    }
+    &Title {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+  }
+}

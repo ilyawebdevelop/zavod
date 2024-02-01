@@ -1,0 +1,68 @@
+.contacts {
+  &W {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &L {
+    background-color: #36AF42;
+    padding-top: 80px;
+    padding-left: 120px;
+    padding-right: 52px;
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+  }
+
+  &R {
+    background: #16191C url('@img/contacts/star.svg') no-repeat right center / contain;
+    padding-top: 80px;
+    padding-right: 120px;
+    padding-bottom: 80px;
+    padding-left: 120px;
+    position: relative;
+    .h2 {
+      color: #36AF42;
+      margin-bottom: 30px;
+    }
+    .m {
+      position: absolute;
+      left: -190px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+  &Item {
+    &Name {
+      font-size: 15px;
+      font-family: $font-family-nunito;
+      line-height: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    &Link {
+      font-size: 16px;  
+      line-height: 26px;
+      max-width: 280px;
+      font-weight: 400;
+      transition: color .2s linear;  
+      font-family: $font-family-nunito;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .formInput {
+    background-color: #fff;
+  }
+
+  .formText {
+    background-color: #fff;
+  }
+}

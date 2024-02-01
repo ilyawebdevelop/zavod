@@ -1,0 +1,25 @@
+.projects {
+  padding-bottom: 0;
+  padding-top: 90px;
+  &Slider {
+    border-bottom: 1px solid #8F989F;
+    padding-bottom: 60px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  &Slide {
+    padding: 20px 20px 25px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.0);
+    transition: box-shadow .2s linear;
+    &:hover {
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+    }
+    .cardSlideDescrSm {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .cardSlideTitle {
+      margin-top: 10px;
+    }
+  }
+}

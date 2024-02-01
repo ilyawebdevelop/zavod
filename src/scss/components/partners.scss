@@ -1,0 +1,39 @@
+.partners {
+  padding-bottom: 0;
+  &-about {
+    padding-top: 60px;
+    h2 {
+      text-transform: unset;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 600;
+      letter-spacing: unset;
+    }
+    .partnersSlider {
+      padding-top: 40px;
+    }
+  }
+  &Slider {
+  padding-top: 60px;
+    padding-bottom: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  &Slide {
+    height: auto;
+
+    img {
+      padding-left: 30px;
+      padding-right: 30px;
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+      height: 100%;
+      object-fit: contain;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      object-position: center;
+    }
+  }
+}

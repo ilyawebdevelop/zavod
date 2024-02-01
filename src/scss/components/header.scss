@@ -1,0 +1,170 @@
+// Header
+.header {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  @media(max-width: 991px){
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &Logo {
+    img {
+      max-width: 122px;
+    }
+
+    &Icon {
+      top: -4px;
+      position: absolute;
+      right: 48px;
+
+      @media(max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+
+  &Descr {
+    font-family: $font-family-tektur;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    line-height: 20px;
+    max-width: 240px;
+
+    span {
+      color: #36AF42;
+    }
+  }
+
+  &Phone {
+    font-family: $font-family-tektur;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1.08px;
+    padding-left: 30px;
+    background: url('@img/icons/phone.svg') no-repeat left center / 20px;
+    transition: color .2s linear;
+
+    @media(max-width: 991px) {
+      width: 40px;
+      height: 40px;
+      margin-right: 50px;
+      background: url('@img/icons/phone-white.svg') no-repeat center center / 20px;
+      margin-left: auto;
+      margin-right: 8px;
+      background-color: #16191C;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &:hover {
+      color: #36AF42;
+    }
+  }
+
+  .logoW {
+    position: relative;
+    width: fit-content;
+  }
+}
+
+.headerNav {
+  z-index: 1;
+  background: #16191C;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media(max-width: 991px) {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  &.active {
+    display: block;
+  }
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    @media(max-width: 991px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &W {
+    margin-top: 25px;
+  }
+
+  @media(max-width: 991px) {
+    display: none;
+  }
+
+  ul {
+    flex-wrap: wrap;
+
+    li {
+      a {
+        padding-top: 15px;
+        padding-bottom: 13px;
+        font-family: $font-family-nunito;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+        color: #fff;
+        text-transform: uppercase;
+        transition: color .2s linear, border-color .2s linear;
+        border-bottom: 4px solid transparent;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media(max-width: 1199px) {
+          font-size: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        @media(max-width: 991px){
+          color: #16191C;
+          padding-left: 0;
+        }
+
+        &:hover {
+          border-color: #36AF42;
+        }
+      }
+    }
+  }
+  .btnClose {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 6px;
+  }
+}
+.headerNav {
+  .headerPhone{
+    @media(max-width: 991px){
+      background: url('@img/icons/phone.svg') no-repeat left center / 20px;
+      width: fit-content;
+      height: fit-content;
+      padding-left: 25px;
+      margin-right: 0;
+    }
+  }
+}
+.headerMobLogo {
+  @media(max-width: 991px){
+    margin-bottom: 10px;
+  }
+}

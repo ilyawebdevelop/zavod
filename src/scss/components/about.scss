@@ -1,0 +1,39 @@
+.about{
+  &Title {
+    font-size: 32px;
+    font-family: $font-family-nunito;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    line-height: 48px;
+    color: #fff;
+  }
+  &W {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  &L {
+    background-color: #16191C;
+    padding-top: 60px;
+    padding-left: 55px;
+    padding-right: 52px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &R {
+    img {
+      height: 520px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    color: #fff;
+    margin-top: 19px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: $font-family-nunito;
+    margin-bottom: 30px;
+  }
+}
