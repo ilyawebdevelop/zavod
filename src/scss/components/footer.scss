@@ -1,35 +1,45 @@
 // Footer
 .footer {
-  .logoW{
-    position: relative;    
+  .logoW {
+    position: relative;
     width: fit-content;
     margin-top: 40px;
     margin-bottom: 30px;
-  }
-  &Logo {
-    img {
-      max-width: 122px;
+
+    @media(max-width: 767px) {
+      margin-top: 0;
     }
+  }
+
+  &Logo {
     &Icon {
-     bottom: 28px;
+      bottom: 28px;
       position: absolute;
       right: 48px;
     }
   }
+
   &T {
     padding-top: 80px;
     padding-bottom: 30px;
+
+    @media(max-width: 767px) {
+      padding-top: 50px;
+    }
+
     &Link {
       margin-bottom: 16px;
       font-size: 14px;
       letter-spacing: 0.42px;
       line-height: 21px;
       transition: color .2s linear;
+
       &:hover {
         color: #36AF42;
       }
     }
   }
+
   &B {
     background-color: #16191C;
     border-top: 1px solid var(--, #8F989F);
@@ -37,7 +47,12 @@
     padding-bottom: 20px;
     color: #fff;
   }
+
   &Nav {
+    @media(max-width: 767px) {
+      margin-bottom: 45px;
+    }
+
     &Title {
       margin-bottom: 20px;
       text-transform: uppercase;
@@ -48,15 +63,18 @@
       letter-spacing: 0.75px;
       font-family: $font-family-nunito;
     }
+
     &List {
       li {
         margin-bottom: 14px;
+
         a {
           font-size: 14px;
           line-height: 21px;
           letter-spacing: 0.14px;
           transition: color .2s linear;
           font-family: $font-family-nunito;
+
           &:hover {
             color: #36AF42;
           }
@@ -64,25 +82,35 @@
       }
     }
   }
+
   .copyright {
     font-size: 14px;
+    line-height: 18px;
     font-family: $font-family-nunito;
     font-weight: 400;
     letter-spacing: 0.14px;
   }
+
   .develop {
     font-family: $font-family-nunito;
     font-size: 14px;
     line-height: 24px;
     padding-left: 30px;
     letter-spacing: 0.14px;
-    background: url('@img/icons/develop.svg') no-repeat left center / 20px;   
+    background: url('@img/icons/develop.svg') no-repeat left center / 20px;
+
     &:hover {
       opacity: .8;
     }
   }
+
   .energy {
     margin-bottom: 42px;
+
+    @media(max-width: 767px) {
+      margin-bottom: 20px;
+    }
+
     &Descr {
       color: #2162AF;
       font-size: 16px;
@@ -94,4 +122,9 @@
     }
   }
 
+  .text--sm {
+    @media(max-width: 991px) {
+      color: #8F989F;
+    }
+  }
 }

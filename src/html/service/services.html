@@ -1,15 +1,15 @@
-<section class="projects" id="projects">
+<section class="projects pb-5 pb-md-0 pt-4 pt-md-5" id="projects">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-      <h3 class="projectsTitle h3">Услуги</h3>
-      <a href="#" class="linkMore">
+      <h3 class="projectsTitle h3 mb-0">Услуги</h3>
+      <a href="#" class="linkMore d-none d-md-flex">
         все услуги зАвода
         <svg>
           <use xlink:href="img/icons/icons.svg#slider-next"></use>
         </svg>
       </a>
     </div>
-    <div class="gridThree gap-none pb-5 mt-3">
+    <div class="gridThree gap-none pb-2 pb-md-5 mt-3">
 
       <div class="cardSlide">
         <a class="cardSlideImg" href="#">
@@ -18,7 +18,7 @@
         <a class="cardSlideTitle" href="#">
           Разработка чертежей стадии КМД 
         </a>
-        <a href="#" class="cardSlideBtnText">
+        <a href="#" class="cardSlideBtnText d-none d-md-flex">
           подробнее
           <svg>
             <use xlink:href="img/icons/icons.svg#slider-next"></use>
@@ -33,7 +33,7 @@
         <a class="cardSlideTitle" href="#">
           Дорожное металлическое ограждение одно-, двухстороннее
         </a>
-        <a href="#" class="cardSlideBtnText">
+        <a href="#" class="cardSlideBtnText d-none d-md-flex">
           подробнее
           <svg>
             <use xlink:href="img/icons/icons.svg#slider-next"></use>
@@ -47,7 +47,7 @@
         <a class="cardSlideTitle" href="#">
           Металлические опоры линии электропередач (ЛЭП)
         </a>
-        <a href="#" class="cardSlideBtnText">
+        <a href="#" class="cardSlideBtnText d-none d-md-flex">
           подробнее
           <svg>
             <use xlink:href="img/icons/icons.svg#slider-next"></use>
@@ -56,5 +56,16 @@
       </div><!-- /cardSlide -->
 
     </div>
+    <button class="catalogBtn mx-auto button button--green d-flex d-md-none" data-bs-toggle="modal" data-bs-target="#modal-calc">
+      Рассчитать стоимость
+      <img src="@img/icons/calc.svg" alt="calc">
+    </button>
+    <a href="#" class="linkMore d-flex d-md-none justify-content-center">
+      все услуги зАвода
+      <svg>
+        <use xlink:href="img/icons/icons.svg#slider-next"></use>
+      </svg>
+    </a>
+
   </div>
 </section>

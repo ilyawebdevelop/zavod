@@ -19,10 +19,15 @@
 	
 	<div class="wrapper">
 		<!-- Header -->
-<header class="header pb-0" id="header">
+<header class="header pb-0 headerStandart" id="header">
   <div class="container">
     <div class="row">
-      <div class="col-5">
+      <div class="col-6 col-lg-5 d-flex d-lg-block gap-4 gap-lg-0">
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
         <a href="/" class="d-flex gap-2 align-items-center logoW">
           <div class="headerLogo logo"><img src="img/admin/header/logo.svg" alt="logo"></div>
           <div class="headerDescr d-none d-lg-block">
@@ -32,20 +37,16 @@
           <img src="img/icons/logo-icon.svg" alt="icon" class="headerLogoIcon">
         </a>
       </div>
-      <div class="col-7">
-        <div class="d-flex justify-content-end align-items-center gap-4">
+      <div class="col-6 col-lg-7">
+        <div class="d-flex justify-content-end align-items-center gap-0 gap-lg-4">
           <a href="tel:+793952252352" class="headerPhone">
             <span class="d-none d-lg-block">+79 (3952) 25-23-52</span>
           </a>
-          <div class="hamburger" id="toggle">
-            <div class="top-bun"></div>
-            <div class="meat"></div>
-            <div class="bottom-bun"></div>
-          </div><!-- /Hamburger Menu -->
-          <button class="headerButton button button--green d-none d-lg-flex" data-bs-toggle="modal"
-            data-bs-target="#modal-calc">
-            Рассчитать стоимость
-            <img src="img/icons/calc.svg" alt="calc">
+
+          <button class="headerButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+            <span class="d-none d-lg-block">Рассчитать стоимость</span>
+            <img class="d-none d-lg-block" src="img/icons/calc.svg" alt="calc">
+            <img class="d-block d-lg-none" src="img/icons/calc-white.svg" alt="calc">
           </button>
         </div>
       </div>
@@ -59,18 +60,44 @@
   <div class="container container--lg">
     <div class="headerNavW">
       <nav class="headerNav">
-        <ul class="headerNavList d-flex justify-content-around">
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Продукция</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Наши работы</a></li>
-          <li><a href="#">вакансии</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <div class="container">
+          <div class="d-flex d-lg-none justify-content-between align-items-center mb-4">
+            <button class="btnClose">
+              <img src="img/icons/btn-close-black.svg" alt="icon">
+            </button>
+            <a href="tel:+793952252352" class="headerPhone">
+              <span>+79 (3952) 25-23-52</span>
+            </a>
+          </div>
+          <a href="/" class="headerMobLogo d-block d-lg-none">
+            <img src="img/admin/header/logo-vertical.svg" alt="logo">
+          </a>
+          <ul class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Наши работы</a></li>
+            <li><a href="#">вакансии</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="d-flex d-lg-none flex-column gap-3 mt-4">
+            <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+              Рассчитать стоимость
+              <img src="img/icons/calc.svg" alt="calc">
+            </button>
+            <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+              Оставить заявку
+              <svg class="btn-arrow">
+                <use xlink:href="img/icons/icons.svg#mail"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
       </nav>
     </div>
-  
+
   </div>
 </header>
 		<main class="main">		
@@ -96,10 +123,10 @@
       Сборка и сварка конструкций
     </div>
 
+    <img src="img/admin/services/image-2.png" alt="image" class="articleImage d-block d-lg-none mb-4">
 
-
-    <div class="content border-bottom-gray pb-5">
-      <div class="row pb-5">
+    <div class="content border-bottom-gray pb-3 pb-md-5">
+      <div class="row pb-3 pb-xxl-4">
         <div class="col-lg-8">
           <p>
             Сборка и сварка металлических конструкций включает в себя процесс соединения отдельных металлических
@@ -119,7 +146,7 @@
             сборкой и сваркой металлических конструкций могут помочь сократить время и усилия, потребные для выполнения
             проекта, и обеспечить его безопасность и долговечность.
           </p>
-          <div class="d-flex gap-3 mt-5">
+          <div class="d-flex gap-3 mt-5 flex-column flex-sm-row">
             <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
               Заказать услугу
               <svg class="btn-arrow">
@@ -135,7 +162,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <img src="img/admin/services/image-2.png" alt="image" class="articleImage">
+          <img src="img/admin/services/image-2.png" alt="image" class="articleImage d-none d-lg-block">
         </div>
       </div>
     </div>
@@ -144,18 +171,18 @@
   </div>
 </section>
 
-			<section class="projects" id="projects">
+			<section class="projects pb-5 pb-md-0 pt-4 pt-md-5" id="projects">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-      <h3 class="projectsTitle h3">Услуги</h3>
-      <a href="#" class="linkMore">
+      <h3 class="projectsTitle h3 mb-0">Услуги</h3>
+      <a href="#" class="linkMore d-none d-md-flex">
         все услуги зАвода
         <svg>
           <use xlink:href="img/icons/icons.svg#slider-next"></use>
         </svg>
       </a>
     </div>
-    <div class="gridThree gap-none pb-5 mt-3">
+    <div class="gridThree gap-none pb-2 pb-md-5 mt-3">
 
       <div class="cardSlide">
         <a class="cardSlideImg" href="#">
@@ -164,7 +191,7 @@
         <a class="cardSlideTitle" href="#">
           Разработка чертежей стадии КМД 
         </a>
-        <a href="#" class="cardSlideBtnText">
+        <a href="#" class="cardSlideBtnText d-none d-md-flex">
           подробнее
           <svg>
             <use xlink:href="img/icons/icons.svg#slider-next"></use>
@@ -179,7 +206,7 @@
         <a class="cardSlideTitle" href="#">
           Дорожное металлическое ограждение одно-, двухстороннее
         </a>
-        <a href="#" class="cardSlideBtnText">
+        <a href="#" class="cardSlideBtnText d-none d-md-flex">
           подробнее
           <svg>
             <use xlink:href="img/icons/icons.svg#slider-next"></use>
@@ -193,7 +220,7 @@
         <a class="cardSlideTitle" href="#">
           Металлические опоры линии электропередач (ЛЭП)
         </a>
-        <a href="#" class="cardSlideBtnText">
+        <a href="#" class="cardSlideBtnText d-none d-md-flex">
           подробнее
           <svg>
             <use xlink:href="img/icons/icons.svg#slider-next"></use>
@@ -202,6 +229,17 @@
       </div><!-- /cardSlide -->
 
     </div>
+    <button class="catalogBtn mx-auto button button--green d-flex d-md-none" data-bs-toggle="modal" data-bs-target="#modal-calc">
+      Рассчитать стоимость
+      <img src="img/icons/calc.svg" alt="calc">
+    </button>
+    <a href="#" class="linkMore d-flex d-md-none justify-content-center">
+      все услуги зАвода
+      <svg>
+        <use xlink:href="img/icons/icons.svg#slider-next"></use>
+      </svg>
+    </a>
+
   </div>
 </section>
 			<section class="about" id="about">
@@ -232,7 +270,7 @@
           </div><!-- /content -->
         </div>
 
-        <a href="#" class="protectBtnText">
+        <a href="#" class="protectBtnText justify-content-start">
           подробнее
           <svg>
             <use xlink:href="img/icons/icons.svg#slider-next"></use>
@@ -337,7 +375,14 @@
         </div><!-- /cardSlide -->
 
       </div>
+      <a href="#" class="linkMore d-flex d-md-none justify-content-start">
+        все выполненные работы
+        <svg>
+          <use xlink:href="img/icons/icons.svg#slider-next"></use>
+        </svg>
+      </a>
     </div>
+
   </div>
 </section>
 			<section class="partners sect" id="partners">
@@ -394,7 +439,7 @@
         <h2 class="contactsTitle h2">Контакты</h2>
         <div class="contactsItem">
           <div class="contactsItemName">почта:</div>
-          <a href="mailto:email@chzmk.ru" class="contactsItemLink">email@chzmk.ru</a>
+          <a href="mailto:email@chzmk.ru" class="contactsItemLink">a.s.speshilov@energy38.ru</a>
         </div><!-- /contactsItem -->
         <div class="contactsItem">
           <div class="contactsItemName">Телефон:</div>
@@ -439,7 +484,7 @@
   <div class="footerT">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-md-6 col-lg-3">
           <nav class="footerNav">
             <h3 class="footerNavTitle">Компания</h3>
             <ul class="footerNavList">
@@ -449,15 +494,12 @@
               <li><a href="#">Наши работы</a></li>
             </ul>
           </nav>
-          <a class="d-flex flex-column gap-2 align-items-start gap-1 logoW" href="/">
-            <div class="footerLogo logo"><img src="img/admin/header/logo.svg" alt="logo"></div>
-            <div class="headerDescr d-none d-lg-block">
-              ЧЕРЕМХОВСКИЙ <span>ЗАВОД</span>
-              МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+          <a class="d-none d-md-flex flex-column gap-2 align-items-start gap-1 logoW" href="/">
+            <div class="footerLogo logo">
+              <img src="img/admin/header/logo-vertical.svg" alt="logo">
             </div>
-            <img src="img/icons/logo-icon.svg" alt="icon" class="footerLogoIcon">
           </a>
-          <div class="energy">
+          <div class="energy d-none d-md-block">
             <a href="#" class="energyLogo">
               <img src="img/footer/energy.svg" alt="logo">
             </a>
@@ -467,7 +509,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-6 col-lg-4">
           <nav class="footerNav">
             <h3 class="footerNavTitle">Продукция</h3>
             <ul class="footerNavList">
@@ -496,19 +538,19 @@
           <nav class="footerNav">
             <h3 class="footerNavTitle">Услуги</h3>
             <ul class="footerNavList">
-              <li><a href="#">Разработка чертежей стадии КМД 
+              <li><a href="#">Разработка чертежей стадии КМД
                 </a></li>
-              <li><a href="#">Изготовление железобетонных изделий 
+              <li><a href="#">Изготовление железобетонных изделий
                 </a></li>
-              <li><a href="#">Распил профильного металлопроката 
+              <li><a href="#">Распил профильного металлопроката
                 </a></li>
-              <li><a href="#">Плазменная резка листового металла 
+              <li><a href="#">Плазменная резка листового металла
                 </a></li>
               <li><a href="#">Сверление отверстий
                 </a></li>
-              <li><a href="#">Сборка и сварка конструкций 
+              <li><a href="#">Сборка и сварка конструкций
                 </a></li>
-              <li><a href="#">Огрунтование и покраска 
+              <li><a href="#">Огрунтование и покраска
                 </a></li>
               <li><a href="#">Доставка и монтаж готовых металлоконструкций
                 </a></li>
@@ -517,8 +559,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="col d-flex justify-content-between">
-          <p class="text-uppercase text--sm">ООО «ЧЕРЕМХОВСКИЙ ЗАВОД МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ»</p>
+        <a class="d-flex d-md-none flex-column gap-2 align-items-start gap-1 logoW" href="/">
+          <div class="footerLogo logo">
+            <img src="img/admin/header/logo-vertical.svg" alt="logo">
+          </div>
+        </a>
+        <div class="energy d-block d-md-none">
+          <a href="#" class="energyLogo">
+            <img src="img/footer/energy.svg" alt="logo">
+          </a>
+          <p class="energyDescr">
+            проектирование,
+            строительство, энергетика
+          </p>
+        </div>
+        <div class="col d-flex flex-column flex-md-row justify-content-between mt-2 mt-lg-0">
+          <p class="text-uppercase text--sm mb-3 mb-lg-0">ООО «ЧЕРЕМХОВСКИЙ ЗАВОД МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ»</p>
           <p class="text-uppercase text--sm">
             ООО «ЧЗМК» ИНН/КПП 3851023561/385101001
           </p>
@@ -528,7 +584,7 @@
   </div><!-- /footerT -->
   <div class="footerB">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 gap-sm-2">
         <div class="copyright">© 2024 ООО "ЧЗМК"</div>
         <a class="copyright" href="#">
           Политика обработки персональных данных

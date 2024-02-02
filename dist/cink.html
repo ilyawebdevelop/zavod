@@ -19,10 +19,15 @@
 
 	<div class="wrapper">
 		<!-- Header -->
-<header class="header pb-0" id="header">
+<header class="header pb-0 headerStandart" id="header">
   <div class="container">
     <div class="row">
-      <div class="col-5">
+      <div class="col-6 col-lg-5 d-flex d-lg-block gap-4 gap-lg-0">
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
         <a href="/" class="d-flex gap-2 align-items-center logoW">
           <div class="headerLogo logo"><img src="img/admin/header/logo.svg" alt="logo"></div>
           <div class="headerDescr d-none d-lg-block">
@@ -32,20 +37,16 @@
           <img src="img/icons/logo-icon.svg" alt="icon" class="headerLogoIcon">
         </a>
       </div>
-      <div class="col-7">
-        <div class="d-flex justify-content-end align-items-center gap-4">
+      <div class="col-6 col-lg-7">
+        <div class="d-flex justify-content-end align-items-center gap-0 gap-lg-4">
           <a href="tel:+793952252352" class="headerPhone">
             <span class="d-none d-lg-block">+79 (3952) 25-23-52</span>
           </a>
-          <div class="hamburger" id="toggle">
-            <div class="top-bun"></div>
-            <div class="meat"></div>
-            <div class="bottom-bun"></div>
-          </div><!-- /Hamburger Menu -->
-          <button class="headerButton button button--green d-none d-lg-flex" data-bs-toggle="modal"
-            data-bs-target="#modal-calc">
-            Рассчитать стоимость
-            <img src="img/icons/calc.svg" alt="calc">
+
+          <button class="headerButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+            <span class="d-none d-lg-block">Рассчитать стоимость</span>
+            <img class="d-none d-lg-block" src="img/icons/calc.svg" alt="calc">
+            <img class="d-block d-lg-none" src="img/icons/calc-white.svg" alt="calc">
           </button>
         </div>
       </div>
@@ -59,18 +60,44 @@
   <div class="container container--lg">
     <div class="headerNavW">
       <nav class="headerNav">
-        <ul class="headerNavList d-flex justify-content-around">
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Продукция</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Наши работы</a></li>
-          <li><a href="#">вакансии</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <div class="container">
+          <div class="d-flex d-lg-none justify-content-between align-items-center mb-4">
+            <button class="btnClose">
+              <img src="img/icons/btn-close-black.svg" alt="icon">
+            </button>
+            <a href="tel:+793952252352" class="headerPhone">
+              <span>+79 (3952) 25-23-52</span>
+            </a>
+          </div>
+          <a href="/" class="headerMobLogo d-block d-lg-none">
+            <img src="img/admin/header/logo-vertical.svg" alt="logo">
+          </a>
+          <ul class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Наши работы</a></li>
+            <li><a href="#">вакансии</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="d-flex d-lg-none flex-column gap-3 mt-4">
+            <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+              Рассчитать стоимость
+              <img src="img/icons/calc.svg" alt="calc">
+            </button>
+            <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+              Оставить заявку
+              <svg class="btn-arrow">
+                <use xlink:href="img/icons/icons.svg#mail"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+    
       </nav>
     </div>
-  
+
   </div>
 </header>
 		<main class="main">
@@ -104,64 +131,67 @@
       <img src="img/admin/services/image-1.png" alt="image" class="articleImage">
     </div>
 
-    <section class="advantages mt-0" id="advantages">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-1.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            ДОЛГОВЕЧНОСТЬИ НАДЁЖНОСТЬ
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            При горячем цинковании действует двойная защита от коррозии - катодная и барьерная. Срок защиты металла от
-            коррозии более 50 лет.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
-      <div class="col-lg-3">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-2.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            СПОСОБНОСТЬ К САМОВОCСТАНОВЛЕНИЮ
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            В случае небольшого механического повреждения цинковое покрытие имеет способность самовосстанавливаться и
-            продолжает защищать основной металл от коррозии.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
-      <div class="col-lg-3">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-3.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            НЕ ТРЕБУЕТ СЕРВИСНОГО ОБСЛУЖИВАНИЯ
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            Горячеоцинкованное покрытие не требует ремонта в течении всего срока эксплуатации.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
-      <div class="col-lg-3">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-4.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            ПОКРАСКА И ДЕКОРАТИВНОЕ ПОКРЫТИЕ
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            На оцинкованную поверхность возможно нанесение декоративного покрытия.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
+    <section class="advantages mt-0 border-0 pt-0 pt-md-5" id="advantages">
+
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-1.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          ДОЛГОВЕЧНОСТЬИ НАДЁЖНОСТЬ
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          При горячем цинковании действует двойная защита от коррозии - катодная и барьерная. Срок защиты металла от
+          коррозии более 50 лет.
+        </p>
+      </div><!-- /advantagesCard -->
+    </div>
+    <div class="col-lg-3">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-2.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          СПОСОБНОСТЬ К САМОВОCСТАНОВЛЕНИЮ
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          В случае небольшого механического повреждения цинковое покрытие имеет способность самовосстанавливаться и
+          продолжает защищать основной металл от коррозии.
+        </p>
+      </div><!-- /advantagesCard -->
+    </div>
+    <div class="col-lg-3">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-3.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          НЕ ТРЕБУЕТ СЕРВИСНОГО ОБСЛУЖИВАНИЯ
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          Горячеоцинкованное покрытие не требует ремонта в течении всего срока эксплуатации.
+        </p>
+      </div><!-- /advantagesCard -->
+    </div>
+    <div class="col-lg-3">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-4.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          ПОКРАСКА И ДЕКОРАТИВНОЕ ПОКРЫТИЕ
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          На оцинкованную поверхность возможно нанесение декоративного покрытия.
+        </p>
+      </div><!-- /advantagesCard -->
     </div>
   </div>
+
 </section>
 
-    <div class="row mt-5">
+    <div class="row mt-2 mt-md-5">
       <div class="col-lg-6">
-       
+
         <div class="content">
-          <h3>Горячее цинкование</h3>
+
+          <img src="img/admin/services/image-1.png" alt="image" class="articleImage d-block d-lg-none">
+
+          <h3 class="mobile-text-24 text-transform-unset">Горячее цинкование</h3>
           <p>
             С августа 2019 года завод является резидентом территории опережающего социально-экономического развития
             «Черемхово» (ТОСЭР). ТОСЭР в Черемхово создан постановлением правительства Российской Федерации в 2018 году.
@@ -182,97 +212,97 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 d-none d-lg-block">
         <img src="img/admin/services/image-1.png" alt="image" class="articleImage">
       </div>
     </div>
 
-    <section class="advantages mt-0" id="advantages">
-  <div class="container">
-    <h2 class="h2 mb-5">сферы применения</h2>
-    <div class="row row-y-4">
+    <section class="advantages mt-0 border-0" id="advantages">
 
-      <div class="col-lg-4">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-5.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            ЭНЕРГЕТИКА
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            Опоры ЛЭП, соединительные элементы и подвесная арматура, трансформаторные будки, элементы подстанций, опоры
-            трубопроводов, вышки, перемычки для кабельных каналов, кабельные галереи, элементы контактной
-            железнодорожной сети, нефте- и газопроводы, элементы буровых установок.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
-      
-      <div class="col-lg-4">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-6.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            СВЯЗЬ
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            Радиомачты сотовой и радиосвязи, антенны, ретрансляторы для телефонной связи, зажимы, желоба и каналы для
-            кабелей и проводов, СВЧ-опоры.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
-      <div class="col-lg-4">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-7.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            ПРОМЫШЛЕННОЕ И ГРАЖДАНСКОЕ СТРОИТЕЛЬСТВО
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            Каркасы систем зданий, стальные фермы, опалубка, фасадные панели, рельсы, закладные детали, перемычки, люки,
-            решетки, ограждающие элементы лестниц, кровля, водосточная система, оконные отливы, элементы вентиляции,
-            ограды, ворота и др.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
-      <div class="col-lg-4">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-8.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            ДОРОЖНОЕ СТРОИТЕЛЬСТВО
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            Опорные, перильные и шумопоглощающие ограждения, конструкции мостов, путепроводов, тоннелей, барьеры
-            безопасности, направляющие и столбы, водовыпускные и дренажные трубы, опоры для дорожных знаков, мачты
-            освещения, арматурная сетка.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
-      <div class="col-lg-4">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-9.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            ПРОМЫШЛЕННОСТЬ, СЕЛЬСКОЕ ХОЗЯЙСТВО
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            Детали для сельского хозяйства и животноводства — элеваторы, бункеры, силоса, конструкции ферм; конструкции
-            для целлюлозной, автомобильной, судостроительной промышленности; стальные двери и окна, склады и ангары,
-            опоры и перемычки для кранов, шлюзы, контейнеры, емкости, навесы, элементы теплиц и другие конструкции,
-            метизы.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
-      <div class="col-lg-4">
-        <div class="advantagesCard d-flex flex-column align-items-center text-center">
-          <img src="img/admin/cink/cink-10.svg" alt="image" class="advantagesCardImg">
-          <h4 class="advantagesCardTitle">
-            НЕФТЕДОБЫЧА И НЕФТЕПЕРЕРАБОТКА
-          </h4>
-          <p class="advantagesCardDescr advantagesCardDescrSm text-start">
-            Цинковое покрытие не вступает в реакцию с нефтепродуктами, различными растворителями и смазочными
-            материалами, поэтому применение горячего цинкования целесообразно для большинства конструкций
-            нефтедобывающих, нефтеперегонных и нефтеперерабатывающих предприятий.
-          </p>
-        </div><!-- /advantagesCard -->
-      </div>
+  <h2 class="h2 mb-4 mb-md-5 mobile-text-24 text-transform-unset">Cферы применения</h2>
+  <div class="row row-y-4">
+
+    <div class="col-lg-4">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-5.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          ЭНЕРГЕТИКА
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          Опоры ЛЭП, соединительные элементы и подвесная арматура, трансформаторные будки, элементы подстанций, опоры
+          трубопроводов, вышки, перемычки для кабельных каналов, кабельные галереи, элементы контактной
+          железнодорожной сети, нефте- и газопроводы, элементы буровых установок.
+        </p>
+      </div><!-- /advantagesCard -->
+    </div>
+
+    <div class="col-lg-4">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-6.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          СВЯЗЬ
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          Радиомачты сотовой и радиосвязи, антенны, ретрансляторы для телефонной связи, зажимы, желоба и каналы для
+          кабелей и проводов, СВЧ-опоры.
+        </p>
+      </div><!-- /advantagesCard -->
+    </div>
+    <div class="col-lg-4">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-7.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          ПРОМЫШЛЕННОЕ И ГРАЖДАНСКОЕ СТРОИТЕЛЬСТВО
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          Каркасы систем зданий, стальные фермы, опалубка, фасадные панели, рельсы, закладные детали, перемычки, люки,
+          решетки, ограждающие элементы лестниц, кровля, водосточная система, оконные отливы, элементы вентиляции,
+          ограды, ворота и др.
+        </p>
+      </div><!-- /advantagesCard -->
+    </div>
+    <div class="col-lg-4">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-8.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          ДОРОЖНОЕ СТРОИТЕЛЬСТВО
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          Опорные, перильные и шумопоглощающие ограждения, конструкции мостов, путепроводов, тоннелей, барьеры
+          безопасности, направляющие и столбы, водовыпускные и дренажные трубы, опоры для дорожных знаков, мачты
+          освещения, арматурная сетка.
+        </p>
+      </div><!-- /advantagesCard -->
+    </div>
+    <div class="col-lg-4">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-9.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          ПРОМЫШЛЕННОСТЬ, СЕЛЬСКОЕ ХОЗЯЙСТВО
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          Детали для сельского хозяйства и животноводства — элеваторы, бункеры, силоса, конструкции ферм; конструкции
+          для целлюлозной, автомобильной, судостроительной промышленности; стальные двери и окна, склады и ангары,
+          опоры и перемычки для кранов, шлюзы, контейнеры, емкости, навесы, элементы теплиц и другие конструкции,
+          метизы.
+        </p>
+      </div><!-- /advantagesCard -->
+    </div>
+    <div class="col-lg-4">
+      <div class="advantagesCard d-flex flex-column align-items-start align-items-md-center text-center">
+        <img src="img/admin/cink/cink-10.svg" alt="image" class="advantagesCardImg mx-auto">
+        <h4 class="advantagesCardTitle text-start text-md-center">
+          НЕФТЕДОБЫЧА И НЕФТЕПЕРЕРАБОТКА
+        </h4>
+        <p class="advantagesCardDescr advantagesCardDescrSm text-start">
+          Цинковое покрытие не вступает в реакцию с нефтепродуктами, различными растворителями и смазочными
+          материалами, поэтому применение горячего цинкования целесообразно для большинства конструкций
+          нефтедобывающих, нефтеперегонных и нефтеперерабатывающих предприятий.
+        </p>
+      </div><!-- /advantagesCard -->
     </div>
   </div>
+
 </section>
 
   </div>
@@ -284,7 +314,7 @@
         <h2 class="contactsTitle h2">Контакты</h2>
         <div class="contactsItem">
           <div class="contactsItemName">почта:</div>
-          <a href="mailto:email@chzmk.ru" class="contactsItemLink">email@chzmk.ru</a>
+          <a href="mailto:email@chzmk.ru" class="contactsItemLink">a.s.speshilov@energy38.ru</a>
         </div><!-- /contactsItem -->
         <div class="contactsItem">
           <div class="contactsItemName">Телефон:</div>
@@ -329,7 +359,7 @@
   <div class="footerT">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-md-6 col-lg-3">
           <nav class="footerNav">
             <h3 class="footerNavTitle">Компания</h3>
             <ul class="footerNavList">
@@ -339,15 +369,12 @@
               <li><a href="#">Наши работы</a></li>
             </ul>
           </nav>
-          <a class="d-flex flex-column gap-2 align-items-start gap-1 logoW" href="/">
-            <div class="footerLogo logo"><img src="img/admin/header/logo.svg" alt="logo"></div>
-            <div class="headerDescr d-none d-lg-block">
-              ЧЕРЕМХОВСКИЙ <span>ЗАВОД</span>
-              МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+          <a class="d-none d-md-flex flex-column gap-2 align-items-start gap-1 logoW" href="/">
+            <div class="footerLogo logo">
+              <img src="img/admin/header/logo-vertical.svg" alt="logo">
             </div>
-            <img src="img/icons/logo-icon.svg" alt="icon" class="footerLogoIcon">
           </a>
-          <div class="energy">
+          <div class="energy d-none d-md-block">
             <a href="#" class="energyLogo">
               <img src="img/footer/energy.svg" alt="logo">
             </a>
@@ -357,7 +384,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-6 col-lg-4">
           <nav class="footerNav">
             <h3 class="footerNavTitle">Продукция</h3>
             <ul class="footerNavList">
@@ -386,19 +413,19 @@
           <nav class="footerNav">
             <h3 class="footerNavTitle">Услуги</h3>
             <ul class="footerNavList">
-              <li><a href="#">Разработка чертежей стадии КМД 
+              <li><a href="#">Разработка чертежей стадии КМД
                 </a></li>
-              <li><a href="#">Изготовление железобетонных изделий 
+              <li><a href="#">Изготовление железобетонных изделий
                 </a></li>
-              <li><a href="#">Распил профильного металлопроката 
+              <li><a href="#">Распил профильного металлопроката
                 </a></li>
-              <li><a href="#">Плазменная резка листового металла 
+              <li><a href="#">Плазменная резка листового металла
                 </a></li>
               <li><a href="#">Сверление отверстий
                 </a></li>
-              <li><a href="#">Сборка и сварка конструкций 
+              <li><a href="#">Сборка и сварка конструкций
                 </a></li>
-              <li><a href="#">Огрунтование и покраска 
+              <li><a href="#">Огрунтование и покраска
                 </a></li>
               <li><a href="#">Доставка и монтаж готовых металлоконструкций
                 </a></li>
@@ -407,8 +434,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="col d-flex justify-content-between">
-          <p class="text-uppercase text--sm">ООО «ЧЕРЕМХОВСКИЙ ЗАВОД МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ»</p>
+        <a class="d-flex d-md-none flex-column gap-2 align-items-start gap-1 logoW" href="/">
+          <div class="footerLogo logo">
+            <img src="img/admin/header/logo-vertical.svg" alt="logo">
+          </div>
+        </a>
+        <div class="energy d-block d-md-none">
+          <a href="#" class="energyLogo">
+            <img src="img/footer/energy.svg" alt="logo">
+          </a>
+          <p class="energyDescr">
+            проектирование,
+            строительство, энергетика
+          </p>
+        </div>
+        <div class="col d-flex flex-column flex-md-row justify-content-between mt-2 mt-lg-0">
+          <p class="text-uppercase text--sm mb-3 mb-lg-0">ООО «ЧЕРЕМХОВСКИЙ ЗАВОД МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ»</p>
           <p class="text-uppercase text--sm">
             ООО «ЧЗМК» ИНН/КПП 3851023561/385101001
           </p>
@@ -418,7 +459,7 @@
   </div><!-- /footerT -->
   <div class="footerB">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 gap-sm-2">
         <div class="copyright">© 2024 ООО "ЧЗМК"</div>
         <a class="copyright" href="#">
           Политика обработки персональных данных

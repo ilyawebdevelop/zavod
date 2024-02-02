@@ -5,7 +5,7 @@
       <div class="pageTitle mb-0">
         Новости
       </div>
-      <div class="sortW">
+      <div class="sortW d-none d-md-block">
         <select name="sort" id="sort">
           <option value="bydate">Сортировка: по дате</option>
           <option value="bydate">Сортировка: по имени</option>
@@ -32,12 +32,20 @@
       </ul>
     </nav>
 
+    <div class="sortW d-block d-md-none">
+      <select name="sort" id="sort">
+        <option value="bydate">Сортировка: по дате</option>
+        <option value="bydate">Сортировка: по имени</option>
+      </select>
+    </div>
+
     <ul class="newsList">
 
       <li class="newsItem">
         <div class="row">
           <div class="col-lg-8">
             <a class="newsItemCat" href="#">Новости компании</a>
+            <img src="@img/admin/services/image-1.png" alt="image" class="newsItemImage d-block d-lg-none mb-3">
             <div class="newsItemDate">DD.MM.YYYY</div>
 
             <h3 class="newsItemTitle h3">
@@ -52,10 +60,10 @@
               </svg>
             </a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-none d-lg-block">
             <a href="#">
               <img src="@img/admin/services/image-1.png" alt="image" class="newsItemImage">
-            </a>            
+            </a>
           </div>
         </div>
       </li>
@@ -64,6 +72,7 @@
         <div class="row">
           <div class="col-lg-8">
             <a class="newsItemCat" href="#">Новости компании</a>
+            <img src="@img/admin/services/image-2.png" alt="image" class="newsItemImage d-block d-lg-none mb-3">
             <div class="newsItemDate">DD.MM.YYYY</div>
 
             <h3 class="newsItemTitle h3">
@@ -78,10 +87,10 @@
               </svg>
             </a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-none d-lg-block">
             <a href="#">
               <img src="@img/admin/services/image-2.png" alt="image" class="newsItemImage">
-            </a>            
+            </a>
           </div>
         </div>
       </li>
@@ -89,6 +98,7 @@
         <div class="row">
           <div class="col-lg-8">
             <a class="newsItemCat" href="#">Статьи</a>
+            <img src="@img/admin/services/image-2.png" alt="image" class="newsItemImage d-block d-lg-none mb-3">
             <div class="newsItemDate">DD.MM.YYYY</div>
 
             <h3 class="newsItemTitle h3">
@@ -103,10 +113,10 @@
               </svg>
             </a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-none d-lg-block">
             <a href="#">
               <img src="@img/admin/services/image-2.png" alt="image" class="newsItemImage">
-            </a>            
+            </a>
           </div>
         </div>
       </li>
@@ -114,6 +124,7 @@
         <div class="row">
           <div class="col-lg-8">
             <a class="newsItemCat" href="#">Новости отрасли</a>
+            <img src="@img/admin/services/image-3.png" alt="image" class="newsItemImage d-block d-lg-none mb-3">
             <div class="newsItemDate">DD.MM.YYYY</div>
 
             <h3 class="newsItemTitle h3">
@@ -128,10 +139,10 @@
               </svg>
             </a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 d-none d-lg-block">
             <a href="#">
               <img src="@img/admin/services/image-3.png" alt="image" class="newsItemImage">
-            </a>            
+            </a>
           </div>
         </div>
       </li>

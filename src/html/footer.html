@@ -3,7 +3,7 @@
   <div class="footerT">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-md-6 col-lg-3">
           <nav class="footerNav">
             <h3 class="footerNavTitle">Компания</h3>
             <ul class="footerNavList">
@@ -13,15 +13,12 @@
               <li><a href="#">Наши работы</a></li>
             </ul>
           </nav>
-          <a class="d-flex flex-column gap-2 align-items-start gap-1 logoW" href="/">
-            <div class="footerLogo logo"><img src="@img/admin/header/logo.svg" alt="logo"></div>
-            <div class="headerDescr d-none d-lg-block">
-              ЧЕРЕМХОВСКИЙ <span>ЗАВОД</span>
-              МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+          <a class="d-none d-md-flex flex-column gap-2 align-items-start gap-1 logoW" href="/">
+            <div class="footerLogo logo">
+              <img src="@img/admin/header/logo-vertical.svg" alt="logo">
             </div>
-            <img src="@img/icons/logo-icon.svg" alt="icon" class="footerLogoIcon">
           </a>
-          <div class="energy">
+          <div class="energy d-none d-md-block">
             <a href="#" class="energyLogo">
               <img src="@img/footer/energy.svg" alt="logo">
             </a>
@@ -31,7 +28,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-6 col-lg-4">
           <nav class="footerNav">
             <h3 class="footerNavTitle">Продукция</h3>
             <ul class="footerNavList">
@@ -60,19 +57,19 @@
           <nav class="footerNav">
             <h3 class="footerNavTitle">Услуги</h3>
             <ul class="footerNavList">
-              <li><a href="#">Разработка чертежей стадии КМД 
+              <li><a href="#">Разработка чертежей стадии КМД
                 </a></li>
-              <li><a href="#">Изготовление железобетонных изделий 
+              <li><a href="#">Изготовление железобетонных изделий
                 </a></li>
-              <li><a href="#">Распил профильного металлопроката 
+              <li><a href="#">Распил профильного металлопроката
                 </a></li>
-              <li><a href="#">Плазменная резка листового металла 
+              <li><a href="#">Плазменная резка листового металла
                 </a></li>
               <li><a href="#">Сверление отверстий
                 </a></li>
-              <li><a href="#">Сборка и сварка конструкций 
+              <li><a href="#">Сборка и сварка конструкций
                 </a></li>
-              <li><a href="#">Огрунтование и покраска 
+              <li><a href="#">Огрунтование и покраска
                 </a></li>
               <li><a href="#">Доставка и монтаж готовых металлоконструкций
                 </a></li>
@@ -81,8 +78,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="col d-flex justify-content-between">
-          <p class="text-uppercase text--sm">ООО «ЧЕРЕМХОВСКИЙ ЗАВОД МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ»</p>
+        <a class="d-flex d-md-none flex-column gap-2 align-items-start gap-1 logoW" href="/">
+          <div class="footerLogo logo">
+            <img src="@img/admin/header/logo-vertical.svg" alt="logo">
+          </div>
+        </a>
+        <div class="energy d-block d-md-none">
+          <a href="#" class="energyLogo">
+            <img src="@img/footer/energy.svg" alt="logo">
+          </a>
+          <p class="energyDescr">
+            проектирование,
+            строительство, энергетика
+          </p>
+        </div>
+        <div class="col d-flex flex-column flex-md-row justify-content-between mt-2 mt-lg-0">
+          <p class="text-uppercase text--sm mb-3 mb-lg-0">ООО «ЧЕРЕМХОВСКИЙ ЗАВОД МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ»</p>
           <p class="text-uppercase text--sm">
             ООО «ЧЗМК» ИНН/КПП 3851023561/385101001
           </p>
@@ -92,7 +103,7 @@
   </div><!-- /footerT -->
   <div class="footerB">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 gap-sm-2">
         <div class="copyright">© 2024 ООО "ЧЗМК"</div>
         <a class="copyright" href="#">
           Политика обработки персональных данных

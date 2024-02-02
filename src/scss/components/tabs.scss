@@ -1,17 +1,19 @@
 .tabs {
   margin-top: 60px;
   padding-bottom: 35px;
+  @media(max-width: 1400px){
+    margin-top: 50px;
+  }
+  @media(max-width: 767px){
+    margin-top: 30px;
+  }
   &__nav {
     background-color: #8F989F;
     display: flex;    
     flex-wrap: wrap;   
 
     @media(max-width: 991px) {
-      overflow-x: scroll;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      margin-left: -4px;
-      margin-right: -10px;
+     flex-direction: column;
     }
 
     .tabs__nav-btn {      
@@ -23,6 +25,11 @@
       padding-right: 24px;
       padding-left: 24px;
       color: #fff;
+      @media(max-width: 991px){
+        width: 100%;
+        font-size: 18px;      
+        text-align: start;
+      }
 
       &--active {
         background-color: #16191C;
@@ -35,6 +42,9 @@
   &__panel {
     display: none;
     padding-top: 30px;
+    @media(max-width: 767px){
+      padding-top: 20px;
+    }
 
     &.tabs__panel--active {
       display: block;

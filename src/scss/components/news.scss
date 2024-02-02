@@ -2,6 +2,10 @@
   &Item {
     padding-bottom: 40px;
     border-bottom: 1px solid #8F989F;
+    @media(max-width: 991px){
+      border-bottom: none;
+      padding-bottom: 0;
+    }
     &:not(:last-child){
       margin-bottom: 40px;
     }
@@ -17,6 +21,18 @@
       height: 240px;
       object-fit: cover;
       transition: opacity .2s linear;
+      @media(max-width: 1199px){
+        height: 200px;
+      }
+      @media(max-width: 991px){
+        height: 400px;
+      }
+      @media(max-width: 767px){
+        height: 300px;
+      }
+      @media(max-width: 575px){
+        height: 55vw;
+      }
       &:hover {
         opacity: .9;
       }
@@ -40,6 +56,9 @@
     }
     .cardSlideBtnText {
       margin-top: 30px;
+      @media(max-width: 991px){
+        margin-top: 20px;
+      }
     }
   }
 }

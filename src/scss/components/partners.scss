@@ -1,7 +1,15 @@
 .partners {
   padding-bottom: 0;
+
   &-about {
     padding-top: 60px;
+    @media(max-width: 1400px){
+      padding-top: 50px;
+    }
+    @media(max-width: 767px){
+      padding-top: 40px;
+    }
+
     h2 {
       text-transform: unset;
       font-size: 24px;
@@ -9,17 +17,33 @@
       font-weight: 600;
       letter-spacing: unset;
     }
+
     .partnersSlider {
       padding-top: 40px;
+      @media(max-width: 767px){
+        padding-top: 30px;
+      }
     }
   }
+
   &Slider {
-  padding-top: 60px;
+    padding-top: 60px;
     padding-bottom: 90px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: -20px;
     margin-right: -20px;
+    @media(max-width: 1400px){
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+    @media(max-width: 991px){
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+    @media(max-width: 575px){
+      padding-right: 80px;
+    }
   }
 
   &Slide {
@@ -34,6 +58,15 @@
       padding-top: 4px;
       padding-bottom: 4px;
       object-position: center;
+      @media(max-width: 575px){
+        max-height: 160px;
+        width: 100%;
+      }
+    }
+  }
+  .sliderNav {
+    @media(max-width: 767px){
+      display: none;
     }
   }
 }

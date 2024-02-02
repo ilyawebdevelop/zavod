@@ -24,42 +24,50 @@ var mySwiperPartners = new Swiper(partnersSlider, {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      spaceBetween: 10,
     },
     576: {
       slidesPerView: 2,
+      spaceBetween: 10,
     },
     992: {
       slidesPerView: 3,
+      spaceBetween: 30,
     },
     1200: {
       slidesPerView: 4,
+      spaceBetween: 40,
     },
   },
 });
 
 
-// Инициализация слайдера threeSlider
-document.querySelectorAll('.threeSlider').forEach(n => {
-  const mySwiperThreesTemp = new Swiper(n, {
-    slidesPerView: 3,
-    speed: 800,
-    navigation: {
-      nextEl: n.closest('.threeSliderW').querySelector('.sliderNavNext'),
-      prevEl: n.closest('.threeSliderW').querySelector('.sliderNavPrev'),
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
+const mediaQuery768 = window.matchMedia('(min-width: 768px)');
+if (mediaQuery768.matches) {
+  // Инициализация слайдера threeSlider
+  document.querySelectorAll('.threeSlider').forEach(n => {
+    const mySwiperThreesTemp = new Swiper(n, {
+      slidesPerView: 3,
+      speed: 800,
+      navigation: {
+        nextEl: n.closest('.threeSliderW').querySelector('.sliderNavNext'),
+        prevEl: n.closest('.threeSliderW').querySelector('.sliderNavPrev'),
       },
-      768: {
-        slidesPerView: 2,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
       },
-      992: {
-        slidesPerView: 3,
-      },
-    },
+    });
   });
-});
+}
+
 
 // Инициализация слайдера fourSlider
 document.querySelectorAll('.fourSlider').forEach(n => {
@@ -74,15 +82,19 @@ document.querySelectorAll('.fourSlider').forEach(n => {
     breakpoints: {
       0: {
         slidesPerView: 1,
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 2,
+        spaceBetween: 20,
       },
       992: {
         slidesPerView: 3,
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 4,
+        spaceBetween: 40,
       },
     },
   });
@@ -122,7 +134,7 @@ const toggleBurger = function () {
 const bodyOverflow = function () {
   bodyEl.classList.toggle('hidden');
 }
-const menuClose = function () {  
+const menuClose = function () {
   toggleBurger();
   bodyOverflow();
   toggleMenu();

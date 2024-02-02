@@ -1,10 +1,20 @@
 .advantages {
   padding-top: 60px;
   margin-top: 515px;
+  @media(max-width: 1400px){
+    padding-top: 40px;
+    margin-top: 500px;
+  }
+  @media(max-width: 575px){
+    border-bottom: 1px solid #8F989F;
+  }
 
   &Row {
     padding-bottom: 60px;
     position: relative;
+    @media(max-width: 575px){
+      padding-bottom: 20px;
+    }
 
     &::after {
       content: '';
@@ -16,10 +26,16 @@
       width: calc(100% - 30px);
       height: 1px;
       background-color: #8F989F;
+      @media(max-width: 575px){
+        display: none;
+      }
     }
   }
 
   &Card {
+    @media(max-width: 575px){
+      margin-bottom: 30px;
+    }
     &Descr {
       font-size: 16px;
       line-height: 24px;

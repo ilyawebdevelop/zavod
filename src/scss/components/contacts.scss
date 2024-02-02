@@ -2,6 +2,10 @@
   &W {
     display: grid;
     grid-template-columns: 50% 50%;
+    @media(max-width: 991px){
+      grid-template-columns: 1fr;
+      position: relative;
+    }
   }
 
   &L {
@@ -13,6 +17,18 @@
     display: flex;
     flex-direction: column;
     row-gap: 28px;
+    @media(max-width: 1400px){
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 100px;
+    }
+    @media(max-width: 1199px){
+      padding-left: 70px;
+    }
+    @media(max-width: 575px){
+      padding-left: 20px;
+      padding-top: 40px;
+    }
   }
 
   &R {
@@ -22,15 +38,60 @@
     padding-bottom: 80px;
     padding-left: 120px;
     position: relative;
+    @media(max-width: 1400px){
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    @media(max-width: 1199px){
+      padding-right: 70px;
+    }
+    @media(max-width: 991px){
+      position: unset;
+    }
+    @media(max-width: 575px){
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
     .h2 {
       color: #36AF42;
       margin-bottom: 30px;
+      @media(max-width: 1199px){
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
     .m {
       position: absolute;
       left: -190px;
       top: 50%;
       transform: translateY(-50%);
+      @media(max-width: 1400px){
+        left: -200px;
+      }
+      @media(max-width: 1199px){
+        left: -140px;
+      }
+      @media(max-width: 991px){
+        left: unset;
+        right: -70px;
+        top: 40px;
+        transform: none;
+      }
+      @media(max-width: 370px){
+        right: -90px;
+      }
+      img {
+        @media(max-width: 1199px){
+          width: 200px;         
+        }
+        @media(max-width: 370px){
+          width: 170px;
+        }
+      }
     }
 
   }
@@ -52,6 +113,9 @@
       font-weight: 400;
       transition: color .2s linear;  
       font-family: $font-family-nunito;
+      @media(max-width: 1199px){
+        max-width: 260px;
+      }
       &:hover {
         color: #fff;
       }
@@ -64,5 +128,11 @@
 
   .formText {
     background-color: #fff;
+  }
+  .container--lg {
+    @media(max-width: 991px){
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
