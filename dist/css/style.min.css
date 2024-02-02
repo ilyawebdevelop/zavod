@@ -14223,6 +14223,7 @@ h3 {
   .headerNav ul li a {
     color: #16191C;
     padding-left: 0;
+    width: fit-content;
   }
 }
 .headerNav ul li a:hover {
