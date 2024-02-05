@@ -14354,6 +14354,7 @@ h3 {
 .introW .container {
   position: relative;
   z-index: 1;
+  height: 100%;
 }
 .introW .headerNav {
   position: absolute;
