@@ -139,6 +139,26 @@ var mySwiperIntro = new Swiper(introSlider, {
   },
 });
 
+// Инициализация слайдера introSlider
+const aboutSlider = document.querySelector('.aboutSlider');
+var mySwiperAbout = new Swiper(aboutSlider, {
+  slidesPerView: 1,
+  speed: 800,
+  spaceBetween: 10,
+  effect: 'fade',
+  autoplay: {
+    delay: 7000,
+  },
+  fadeEffect: {
+    crossFade: true
+  },
+  pagination: {
+    el: document.querySelector('.about .swiper-pagination'),
+    clickable: true,
+    type: 'bullets',
+  },
+});
+
 // Burger
 const btnMenu = document.querySelector('#toggle');
 const menu = document.querySelector('.headerNav');

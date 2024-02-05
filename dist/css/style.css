@@ -14022,6 +14022,7 @@ h3 {
   padding-right: 24px;
   padding-left: 24px;
   color: #fff;
+  transition: background-color 0.2s linear;
 }
 @media (max-width: 991px) {
   .tabs__nav .tabs__nav-btn {
@@ -14029,6 +14030,9 @@ h3 {
     font-size: 18px;
     text-align: start;
   }
+}
+.tabs__nav .tabs__nav-btn:hover {
+  background-color: #16191C;
 }
 .tabs__nav .tabs__nav-btn--active {
   background-color: #16191C;
@@ -14080,6 +14084,7 @@ h3 {
   padding-right: 24px;
   padding-left: 24px;
   color: #fff;
+  transition: background-color 0.2s linear;
 }
 @media (max-width: 991px) {
   .tabs__nav .tabs__nav-btn {
@@ -14087,6 +14092,9 @@ h3 {
     font-size: 18px;
     text-align: start;
   }
+}
+.tabs__nav .tabs__nav-btn:hover {
+  background-color: #16191C;
 }
 .tabs__nav .tabs__nav-btn--active {
   background-color: #16191C;
@@ -14506,6 +14514,8 @@ h3 {
   background-color: #36AF42;
   padding-left: 5px;
   padding-right: 5px;
+  display: block;
+  width: fit-content;
 }
 .protectR img {
   height: 520px;
@@ -14533,6 +14543,27 @@ h3 {
   }
 }
 
+.aboutSlider {
+  height: 100%;
+}
+.aboutSlide::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.aboutSlide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/about/about-m.svg") no-repeat left center/contain;
+}
 @media (max-width: 575px) {
   .about .container {
     padding-left: 0;
@@ -14560,7 +14591,8 @@ h3 {
 }
 @media (max-width: 767px) {
   .aboutW {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
 .aboutL {
