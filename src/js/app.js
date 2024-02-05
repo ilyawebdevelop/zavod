@@ -119,6 +119,26 @@ var mySwiperArticle = new Swiper(articleSlider, {
   },
 });
 
+// Инициализация слайдера introSlider
+const introSlider = document.querySelector('.introSlider');
+var mySwiperIntro = new Swiper(introSlider, {
+  slidesPerView: 1,
+  speed: 800,
+  spaceBetween: 10,
+  effect: 'fade',
+  autoplay: {
+    delay: 7000,
+  },
+  fadeEffect: {
+    crossFade: true
+  },
+  pagination: {
+    el: document.querySelector('.intro .swiper-pagination'),
+    clickable: true,
+    type: 'bullets',
+  },
+});
+
 // Burger
 const btnMenu = document.querySelector('#toggle');
 const menu = document.querySelector('.headerNav');

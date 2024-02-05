@@ -2,14 +2,11 @@
   <div class="container container--lg">
     <div class="introW">
 
-      <!-- <div class="acordion">
-        <ul class="menu">
-          <li class="item">
+      <div class="swiper introSlider">
+        <div class="swiper-wrapper">
 
-            <div class="trigger" style="background-image: url('@img/admin/intro/intro.png');">
-
-            </div>
-            <div class="content">
+          <div class="swiper-slide introSlide" style="background-image: url('@img/admin/intro/intro.png');">
+            <div class="container">
               <h1 class="introTitle h1">
                 ЧЕРЕМХОВСКИЙ ЗАВОД
                 МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
@@ -17,7 +14,7 @@
               <p class="introDescr">
                 Производство строительных металлоконструкций любой сложности с цинковым покрытием
               </p>
-              <div class="d-flex gap-3">
+              <div class="d-flex gap-3 flex-column flex-sm-row">
                 <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
                   Рассчитать стоимость
                   <img src="@img/icons/calc.svg" alt="calc">
@@ -30,167 +27,58 @@
                 </button>
               </div>
             </div>
+          </div><!-- /introSlide -->
 
-          </li>
-          <li class="item">
-
-            <div class="trigger" style="background-image: url('@img/admin/services/image-1.png');">
-              <p>SLIDE 2 SLIDE 2</p>
-            </div>
-            <div class="content">
-              <h3>SLIDE 2</h3>
-              <p>text2</p>
-            </div>
-
-
-          </li>
-          <li class="item">
-
-            <div class="trigger" style="background-image: url('@img/admin/services/image-2.png');">
-              <p>SLIDE 3 SLIDE 3</p>
-            </div>
-            <div class="content">
-              <h3>SLIDE 3</h3>
-              <p>text3</p>
-            </div>
-
-
-          </li>
-        </ul>
-      </div> -->
-
-
-
-      <div class="acordion">
-        <!-- These variables help keep track of the input name and ID-->
-        <!-- currentTab helps keep track of each individual input-->
-        <!-- tabControlName is used as a unique identifier for the accordion-->
-        <ul>
-          <li>
-            <!-- Using radio inputs means only one can be selected at a time-->
-            <!-- The ID must be unique so the label will point to the input-->
-            <input id="rad1" type="radio" name="rad" checked="checked" />
-            <label for="rad1" style="background-image: url('@img/admin/intro/intro.png');">
-
-            </label>
-            <div class="accslide" style="background-image: url('@img/admin/intro/intro.png');">
-              <div class="content">
-                <h1 class="introTitle h1">
-                  ЧЕРЕМХОВСКИЙ ЗАВОД
-                  МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
-                </h1>
-                <p class="introDescr">
-                  Производство строительных металлоконструкций любой сложности с цинковым покрытием
-                </p>
-                <div class="d-flex gap-3">
-                  <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-order">
-                    Рассчитать стоимость
-                    <img src="@img/icons/calc.svg" alt="calc">
-                  </button>
-                  <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
-                    Оставить заявку
-                    <svg class="btn-arrow">
-                      <use xlink:href="img/icons/icons.svg#mail"></use>
-                    </svg>
-                  </button>
-                </div>
+          <div class="swiper-slide introSlide" style="background-image: url('@img/admin/intro/intro.png');">
+            <div class="container">
+              <h1 class="introTitle h1">
+                ЧЕРЕМХОВСКИЙ ЗАВОД
+            
+              </h1>
+              <p class="introDescr">
+                Производство строительных
+              </p>
+              <div class="d-flex gap-3 flex-column flex-sm-row">
+                <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+                  Рассчитать стоимость
+                  <img src="@img/icons/calc.svg" alt="calc">
+                </button>
+                <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+                  Оставить заявку
+                  <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#order"></use>
+                  </svg>
+                </button>
               </div>
             </div>
-          </li>
-          <li>
-            <!-- Using radio inputs means only one can be selected at a time-->
-            <!-- The ID must be unique so the label will point to the input-->
-            <input id="rad2" type="radio" name="rad" />
-            <label for="rad2" style="background-image: url('@img/admin/services/image-1.png');">
+          </div><!-- /introSlide -->
 
-            </label>
-            <div class="accslide" style="background-image: url('@img/admin/services/image-1.png');">
-              <div class="content">
-                <h1 class="introTitle h1">
-                  ЧЕРЕМХОВСКИЙ ЗАВОД
-                  МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
-                </h1>
-                <p class="introDescr">
-                  Производство строительных металлоконструкций любой сложности с цинковым покрытием
-                </p>
-                <div class="d-flex gap-3">
-                  <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
-                    Рассчитать стоимость
-                    <img src="@img/icons/calc.svg" alt="calc">
-                  </button>
-                  <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
-                    Оставить заявку
-                    <svg class="btn-arrow">
-                      <use xlink:href="img/icons/icons.svg#mail"></use>
-                    </svg>
-                  </button>
-                </div>
+          <div class="swiper-slide introSlide" style="background-image: url('@img/admin/services/image-1.png');">
+            <div class="container">
+              <h1 class="introTitle h1">
+                ЧЕРЕМХОВСКИЙ ЗАВОД
+                МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
+              </h1>
+              <p class="introDescr">
+                Производство строительных
+              </p>
+              <div class="d-flex gap-3 flex-column flex-sm-row">
+                <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
+                  Рассчитать стоимость
+                  <img src="@img/icons/calc.svg" alt="calc">
+                </button>
+                <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
+                  Оставить заявку
+                  <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#order"></use>
+                  </svg>
+                </button>
               </div>
             </div>
-          </li>
-          <li>
-            <!-- Using radio inputs means only one can be selected at a time-->
-            <!-- The ID must be unique so the label will point to the input-->
-            <input id="rad3" type="radio" name="rad" />
-            <label for="rad3" style="background-image: url('@img/admin/services/image-2.png');">
+          </div><!-- /introSlide -->
 
-            </label>
-            <div class="accslide" style="background-image: url('@img/admin/services/image-2.png');">
-              <div class="content">
-                <h1 class="introTitle h1">
-                  ЧЕРЕМХОВСКИЙ ЗАВОД
-                  МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
-                </h1>
-                <p class="introDescr">
-                  Производство строительных металлоконструкций любой сложности с цинковым покрытием
-                </p>
-                <div class="d-flex gap-3">
-                  <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-order">
-                    Рассчитать стоимость
-                    <img src="@img/icons/calc.svg" alt="calc">
-                  </button>
-                  <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
-                    Оставить заявку
-                    <svg class="btn-arrow">
-                      <use xlink:href="img/icons/icons.svg#mail"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <!-- Using radio inputs means only one can be selected at a time-->
-            <!-- The ID must be unique so the label will point to the input-->
-            <input id="rad4" type="radio" name="rad" />
-            <label for="rad4" style="background-image: url('@img/admin/services/image-3.png');">
-
-            </label>
-            <div class="accslide" style="background-image: url('@img/admin/services/image-3.png');">
-              <div class="content">
-                <h1 class="introTitle h1">
-                  ЧЕРЕМХОВСКИЙ ЗАВОД
-                  МЕТАЛЛИЧЕСКИХ КОНСТРУКЦИЙ
-                </h1>
-                <p class="introDescr">
-                  Производство строительных металлоконструкций любой сложности с цинковым покрытием
-                </p>
-                <div class="d-flex gap-3">
-                  <button class="introButton button button--green" data-bs-toggle="modal" data-bs-target="#modal-calc">
-                    Рассчитать стоимость
-                    <img src="@img/icons/calc.svg" alt="calc">
-                  </button>
-                  <button class="introButton button button--white" data-bs-toggle="modal" data-bs-target="#modal-order">
-                    Оставить заявку
-                    <svg class="btn-arrow">
-                      <use xlink:href="img/icons/icons.svg#mail"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
 
       <nav class="headerNav">

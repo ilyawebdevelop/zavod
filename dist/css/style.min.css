@@ -13090,10 +13090,22 @@ h6 {
   letter-spacing: 2.4px;
   font-weight: 800;
 }
+@media (max-width: 1400px) {
+  .h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
 @media (max-width: 991px) {
   .h1 {
     font-size: 32px;
     line-height: 40px;
+  }
+}
+@media (max-width: 358px) {
+  .h1 {
+    font-size: 28px;
+    line-height: 35px;
   }
 }
 
@@ -13131,6 +13143,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 0;
+  color: #16191C;
 }
 @media (max-width: 991px) {
   .h2 {
@@ -13551,6 +13564,17 @@ h3 {
   }
 }
 
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: #8f989f;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #36AF42;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -13632,7 +13656,7 @@ h3 {
 .introButton {
   transition: background 0.2s linear;
 }
-@media (max-width: 440px) {
+@media (max-width: 470px) {
   .introButton {
     width: 100%;
   }
@@ -14261,16 +14285,59 @@ h3 {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 575px) {
+  .intro > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .introTitle {
   color: #fff;
   max-width: 920px;
   margin-bottom: 6px;
   white-space: normal;
 }
+.introSlide {
+  height: auto;
+}
+.introSlide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(4deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.introSlide .container {
+  padding-top: 220px;
+  padding-bottom: 55px;
+  position: relative;
+}
+@media (max-width: 1400px) {
+  .introSlide .container {
+    padding-top: 170px;
+  }
+}
+@media (max-width: 991px) {
+  .introSlide .container {
+    padding-top: 62px;
+  }
+}
+@media (max-width: 575px) {
+  .introSlide .container {
+    padding-bottom: 62px;
+  }
+}
 .introDescr {
   color: #fff;
   font-size: 18px;
   margin-bottom: 30px;
+}
+@media (max-width: 575px) {
+  .introDescr {
+    margin-bottom: 20px;
+  }
 }
 .introW {
   position: relative;
@@ -14301,226 +14368,12 @@ h3 {
 .introW .headerNav ul {
   flex-wrap: wrap;
 }
-.acordion {
-  /* LIST */
-  /* FORM */
-  /* SLIDES */
-}
-.acordion ul {
-  list-style: none;
-}
-.acordion input {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-.acordion label {
-  display: block;
-  float: left;
-  min-height: 500px;
-  width: 40px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 14px;
-  line-height: 50px;
-  transition: background 300ms ease;
-  background-size: cover;
-  -webkit-animation: shows 1s;
-  animation: shows 1s;
-}
-@media (max-width: 991px) {
-  .acordion label {
-    width: 20px;
-  }
-}
-.acordion label:hover {
-  transition-duration: 0s;
-}
-.acordion li:nth-child(even) > input + label {
-  background: #3a4059;
-}
-.acordion label:hover,
-.acordion li:nth-child(even) > input + label:hover {
-  color: #fff;
-  cursor: pointer;
-}
-.acordion input[type=radio]:checked ~ label {
-  color: #fff;
-  cursor: default !important;
-}
-.acordion input[type=radio]:checked ~ label + .accslide .content {
-  -webkit-animation: shows 3.7s;
-  animation: shows 3.7s;
-  display: block;
-}
-.acordion .accslide {
-  display: block;
-  height: 100%;
-  width: 0px;
-  padding: 10px 0;
-  float: left;
-  overflow-x: hidden;
-  white-space: nowrap;
-  transition: all 700ms ease;
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.acordion .accslide::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: linear-gradient(24deg, rgba(0, 0, 0, 0.6) 15.15%, rgba(0, 0, 0, 0) 65.15%);
-}
-.acordion .accslide::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 67.73%);
-}
-.acordion .accslide * {
-  padding-left: 10px;
-}
-.acordion .accslide img {
-  margin-top: 10px;
-}
-.acordion input[type=radio]:not(:checked) ~ label > * {
-  padding-left: 7px;
-  font-size: 1.2em;
-  white-space: nowrap;
-  transform: rotate(90deg);
-}
-.acordion input[type=radio]:checked ~ label > * {
-  display: none;
-}
-.acordion li:nth-child(1):nth-last-child(2) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 80px);
-}
-.acordion li:nth-child(2):nth-last-child(1) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 80px);
-}
-.acordion li:nth-child(1):nth-last-child(3) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 120px);
-}
-.acordion li:nth-child(2):nth-last-child(2) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 120px);
-}
-.acordion li:nth-child(3):nth-last-child(1) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 120px);
-}
-.acordion li:nth-child(1):nth-last-child(4) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 160px);
-}
-.acordion li:nth-child(2):nth-last-child(3) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 160px);
-}
-.acordion li:nth-child(3):nth-last-child(2) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 160px);
-}
-.acordion li:nth-child(4):nth-last-child(1) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 160px);
-}
-.acordion li:nth-child(1):nth-last-child(5) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 200px);
-}
-.acordion li:nth-child(2):nth-last-child(4) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 200px);
-}
-.acordion li:nth-child(3):nth-last-child(3) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 200px);
-}
-.acordion li:nth-child(4):nth-last-child(2) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 200px);
-}
-.acordion li:nth-child(5):nth-last-child(1) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 200px);
-}
-.acordion li:nth-child(1):nth-last-child(6) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 240px);
-}
-.acordion li:nth-child(2):nth-last-child(5) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 240px);
-}
-.acordion li:nth-child(3):nth-last-child(4) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 240px);
-}
-.acordion li:nth-child(4):nth-last-child(3) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 240px);
-}
-.acordion li:nth-child(5):nth-last-child(2) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 240px);
-}
-.acordion li:nth-child(6):nth-last-child(1) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 240px);
-}
-.acordion li:nth-child(1):nth-last-child(7) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 280px);
-}
-.acordion li:nth-child(2):nth-last-child(6) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 280px);
-}
-.acordion li:nth-child(3):nth-last-child(5) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 280px);
-}
-.acordion li:nth-child(4):nth-last-child(4) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 280px);
-}
-.acordion li:nth-child(5):nth-last-child(3) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 280px);
-}
-.acordion li:nth-child(6):nth-last-child(2) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 280px);
-}
-.acordion li:nth-child(7):nth-last-child(1) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 280px);
-}
-.acordion li:nth-child(1):nth-last-child(8) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 320px);
-}
-.acordion li:nth-child(2):nth-last-child(7) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 320px);
-}
-.acordion li:nth-child(3):nth-last-child(6) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 320px);
-}
-.acordion li:nth-child(4):nth-last-child(5) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 320px);
-}
-.acordion li:nth-child(5):nth-last-child(4) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 320px);
-}
-.acordion li:nth-child(6):nth-last-child(3) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 320px);
-}
-.acordion li:nth-child(7):nth-last-child(2) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 320px);
-}
-.acordion li:nth-child(8):nth-last-child(1) input[type=radio]:checked ~ .accslide {
-  width: calc(100% - 320px);
-}
-.acordion .content {
-  padding-top: 150px;
-  display: none;
-  position: relative;
-  z-index: 1;
-}
-
 .advantages {
   padding-top: 60px;
-  margin-top: 515px;
 }
 @media (max-width: 1400px) {
   .advantages {
     padding-top: 40px;
-    margin-top: 500px;
   }
 }
 @media (max-width: 575px) {

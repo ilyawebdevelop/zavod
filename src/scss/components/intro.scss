@@ -1,6 +1,12 @@
 .intro {
   position: relative;
   z-index: 1;
+  &>.container {
+    @media(max-width: 575px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
   &Title {
     color: #fff;
@@ -9,21 +15,54 @@
     white-space: normal;
   }
 
+  &Slide {
+    height: auto;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient(4deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .container {
+      padding-top: 220px;
+      padding-bottom: 55px;
+      position: relative;
+
+      @media(max-width: 1400px) {
+        padding-top: 170px;
+      }
+      @media(max-width: 991px){
+        padding-top: 62px;
+      }
+      @media(max-width: 575px){
+        padding-bottom: 62px;
+      }
+    }
+  }
+
   &Descr {
     color: #fff;
     font-size: 18px;
     margin-bottom: 30px;
+    @media(max-width: 575px){
+      margin-bottom: 20px;
+    }
   }
 
   &W {
-    // padding-top: 220px;
-    // padding-bottom: 55px;
     position: relative;
     background-position: center;
+
 
     .container {
       position: relative;
       z-index: 1;
+
     }
 
 
@@ -37,8 +76,8 @@
       padding-left: 20px;
       padding-right: 20px;
 
-      @media(max-width: 991px){
-        position: fixed;   
+      @media(max-width: 991px) {
+        position: fixed;
         background-color: #fff;
         padding-left: 0;
         padding-right: 0;
@@ -49,298 +88,9 @@
         flex-wrap: wrap;
 
         li {
-          a {        
-  
-      
-          }
+          a {}
         }
       }
     }
-  }
-}
-
-
-
-
-.acordion {
-
-  /* LIST */
-  ul {
-    list-style: none;
-  }
-
-  /* FORM */
-  input {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  label {
-    display: block;
-    float: left;
-    min-height: 500px;
-    width: 40px;
-    overflow: hidden;
-    // background: #30354a;
-    text-align: center;
-    font-size: 14px;
-    line-height: 50px;
-    transition: background 300ms ease;
-    background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    -webkit-animation: shows 1s;
-    animation: shows 1s;
-    @media(max-width: 991px){
-      width: 20px;
-    }
-  }
-
-  label:hover {
-    transition-duration: 0s;
-  }
-
-  li {
-    &:nth-child(1) {
-      input {
-        &:checked {
-          &+label {
-            // display: none;
-            // -webkit-animation: shows 0.5s;
-            // animation: shows 0.5s;
-          }
-        }
-      }
-    }
-  }
-
-  li:nth-child(even)>input+label {
-    background: #3a4059;
-  }
-
-  label:hover,
-  li:nth-child(even)>input+label:hover {
-    // background: #2196f3;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  input[type=radio]:checked~label {
-    // background: #2196f3;
-    color: #fff;
-    cursor: default !important;
-
-    &+.accslide {
-
-      .content {
-        -webkit-animation: shows 3.7s;
-        animation: shows 3.7s;
-        display: block;
-      }
-    }
-  }
-
-  /* SLIDES */
-  .accslide {
-    display: block;
-    height: 100%;
-    width: 0px;
-    padding: 10px 0;
-    float: left;
-    overflow-x: hidden;
-    white-space: nowrap;
-    transition: all 700ms ease;
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: linear-gradient(24deg, rgba(0, 0, 0, 0.60) 15.15%, rgba(0, 0, 0, 0.00) 65.15%);
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.00) 67.73%);
-    }
-  }
-
-  .accslide * {
-    padding-left: 10px;
-  }
-
-  .accslide img {
-    margin-top: 10px;
-  }
-
-  input[type=radio]:not(:checked)~label>* {
-    padding-left: 7px;
-    font-size: 1.2em;
-    white-space: nowrap;
-    transform: rotate(90deg);
-  }
-
-  input[type=radio]:checked~label>* {
-    display: none;
-  }
-
-  li:nth-child(1):nth-last-child(2) input[type=radio]:checked~.accslide {
-    width: calc(100% - 80px);
-  }
-
-  li:nth-child(2):nth-last-child(1) input[type=radio]:checked~.accslide {
-    width: calc(100% - 80px);
-  }
-
-  li:nth-child(1):nth-last-child(3) input[type=radio]:checked~.accslide {
-    width: calc(100% - 120px);
-  }
-
-  li:nth-child(2):nth-last-child(2) input[type=radio]:checked~.accslide {
-    width: calc(100% - 120px);
-  }
-
-  li:nth-child(3):nth-last-child(1) input[type=radio]:checked~.accslide {
-    width: calc(100% - 120px);
-  }
-
-  li:nth-child(1):nth-last-child(4) input[type=radio]:checked~.accslide {
-    width: calc(100% - 160px);
-  }
-
-  li:nth-child(2):nth-last-child(3) input[type=radio]:checked~.accslide {
-    width: calc(100% - 160px);
-  }
-
-  li:nth-child(3):nth-last-child(2) input[type=radio]:checked~.accslide {
-    width: calc(100% - 160px);
-  }
-
-  li:nth-child(4):nth-last-child(1) input[type=radio]:checked~.accslide {
-    width: calc(100% - 160px);
-  }
-
-  li:nth-child(1):nth-last-child(5) input[type=radio]:checked~.accslide {
-    width: calc(100% - 200px);
-  }
-
-  li:nth-child(2):nth-last-child(4) input[type=radio]:checked~.accslide {
-    width: calc(100% - 200px);
-  }
-
-  li:nth-child(3):nth-last-child(3) input[type=radio]:checked~.accslide {
-    width: calc(100% - 200px);
-  }
-
-  li:nth-child(4):nth-last-child(2) input[type=radio]:checked~.accslide {
-    width: calc(100% - 200px);
-  }
-
-  li:nth-child(5):nth-last-child(1) input[type=radio]:checked~.accslide {
-    width: calc(100% - 200px);
-  }
-
-  li:nth-child(1):nth-last-child(6) input[type=radio]:checked~.accslide {
-    width: calc(100% - 240px);
-  }
-
-  li:nth-child(2):nth-last-child(5) input[type=radio]:checked~.accslide {
-    width: calc(100% - 240px);
-  }
-
-  li:nth-child(3):nth-last-child(4) input[type=radio]:checked~.accslide {
-    width: calc(100% - 240px);
-  }
-
-  li:nth-child(4):nth-last-child(3) input[type=radio]:checked~.accslide {
-    width: calc(100% - 240px);
-  }
-
-  li:nth-child(5):nth-last-child(2) input[type=radio]:checked~.accslide {
-    width: calc(100% - 240px);
-  }
-
-  li:nth-child(6):nth-last-child(1) input[type=radio]:checked~.accslide {
-    width: calc(100% - 240px);
-  }
-
-  li:nth-child(1):nth-last-child(7) input[type=radio]:checked~.accslide {
-    width: calc(100% - 280px);
-  }
-
-  li:nth-child(2):nth-last-child(6) input[type=radio]:checked~.accslide {
-    width: calc(100% - 280px);
-  }
-
-  li:nth-child(3):nth-last-child(5) input[type=radio]:checked~.accslide {
-    width: calc(100% - 280px);
-  }
-
-  li:nth-child(4):nth-last-child(4) input[type=radio]:checked~.accslide {
-    width: calc(100% - 280px);
-  }
-
-  li:nth-child(5):nth-last-child(3) input[type=radio]:checked~.accslide {
-    width: calc(100% - 280px);
-  }
-
-  li:nth-child(6):nth-last-child(2) input[type=radio]:checked~.accslide {
-    width: calc(100% - 280px);
-  }
-
-  li:nth-child(7):nth-last-child(1) input[type=radio]:checked~.accslide {
-    width: calc(100% - 280px);
-  }
-
-  li:nth-child(1):nth-last-child(8) input[type=radio]:checked~.accslide {
-    width: calc(100% - 320px);
-  }
-
-  li:nth-child(2):nth-last-child(7) input[type=radio]:checked~.accslide {
-    width: calc(100% - 320px);
-  }
-
-  li:nth-child(3):nth-last-child(6) input[type=radio]:checked~.accslide {
-    width: calc(100% - 320px);
-  }
-
-  li:nth-child(4):nth-last-child(5) input[type=radio]:checked~.accslide {
-    width: calc(100% - 320px);
-  }
-
-  li:nth-child(5):nth-last-child(4) input[type=radio]:checked~.accslide {
-    width: calc(100% - 320px);
-  }
-
-  li:nth-child(6):nth-last-child(3) input[type=radio]:checked~.accslide {
-    width: calc(100% - 320px);
-  }
-
-  li:nth-child(7):nth-last-child(2) input[type=radio]:checked~.accslide {
-    width: calc(100% - 320px);
-  }
-
-  li:nth-child(8):nth-last-child(1) input[type=radio]:checked~.accslide {
-    width: calc(100% - 320px);
-  }
-
-  .content {
-    padding-top: 150px;
-    display: none;
-    position: relative;
-    z-index: 1;
   }
 }
